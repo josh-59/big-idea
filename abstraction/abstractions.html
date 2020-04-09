@@ -46,31 +46,6 @@
       Moreover, for any given object, there may be many distinct abstractions.
     </p>
 
-		<h2> Example 2: Unix Filters </h2>
-		<p>
-			In the Unix programming environment, the user is presented with an idea called a
-			pipe " <tt>|</tt> ", which allows the output of one program to be used as the input to another
-			program, forming a series of commands which act as a unit.
-			This recasts programs as filters.
-			I argue that because each filter reduces the information that it is given, it
-			generates an abstraction of that information.
-			For instance,
-		</p>
-
-		<p>
-			<tt>ls -l</tt> lists the contents of a directory,
-			creating a new line of output for each file in the directory.
-		</p>
-
-		<p>
-			<tt>wc -l</tt> counts and prints the number of lines in its input, so that
-		</p>
-
-		<p>
-			<tt>ls -l | wc -l</tt> counts and prints the number of files in the current directory (and nothing more).
-			Most information is discarded, and some information is preserved.
-		</p>
-
 		<p>
 				Several fields provide great numbers of good examples of abstractions.
 				In my experience, the clearest ones are found in computer science, where abstraction is extremely important
@@ -80,7 +55,7 @@
 				To express my appreciation, and for a clear example of an abstraction, I ask that you read his essay.
 		</p>
 
-    <h2> Example 3: The C Programming Language </h2>
+    <h2> Example 2: The C Programming Language </h2>
 		<p>
 			C is an imperative programming language, providing abstractions of both memory and functions.
 			The imperative programming style is characterized by writing functions to carry out tasks, thereby breaking up a complex task into a sequence of function calls that each carry out a simpler task.
@@ -94,7 +69,7 @@
 			Ignoring the implementing details hides the complexity of the whole.
 		</p>
 
-    <h2> Example 4: An Automobile </h2>
+    <h2> Example 3: An Automobile </h2>
     <p>
       Abstractions come in all shapes and sizes, and also vary widely in both precision and accuracy.
       Often, one abstracts out of necessity.
@@ -121,7 +96,7 @@
     </p>
 
 		<p>
-      <h2> Example 5: Statement Logic </h2>
+      <h2> Example 4: Statement Logic </h2>
       As a mathematics student, I have studied propositional logic more than once.
       For me, it is very much an intellectual tool:  Much like a table or a diagram, it serves to aid my thinking.
       The usefulness of propositional logic is that it begins abstracting from the statement: I, the mathematician, can view any statement <i>as a proposition</i>, and that proposition becomes an abstraction of my statement.
