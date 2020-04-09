@@ -48,85 +48,74 @@
 		</p>
 
 		<p>
-			There are many things to learn about the process, but probably the most important is that each step in their execution is a process.
-			That is, when you suppose the process abstraction, you are, to my mind, supposing an infinitude of constituent processes.
-			For instance, taking the square of the argument is a process itself, easily decomposed into the appropriate parts.
-			Relative to the process in question, the computation of the polynomial, they are constituent processes.
+			Processes can be built up from constituent processes.
+			Conversely, processes can often be decomposed into simpler processes.
 		</p>
 
-		<h2>Example: Sawing a sheet of plywood</h2>
+		<h2> A Surprising Result </h2>
+		<p>
+			Consider the canonical implementation of the factorial function,
+			written in C:
+		</p>
+
+		<div class=in_text_code>
+			size_t fact(size_t n) {<br>
+				&emsp;&emsp;if( n <= 1 ) {<br>
+				&emsp;&emsp;&emsp;&emsp;	return 1;<br>
+				&emsp;&emsp;}<br>
+				<br>
+				&emsp;&emsp;return n*fact(n-1);<br>
+			}<br>
+		</div>
 
 		<p>
-			Consider the task of sawing a sheet of plywood in two, using a tablesaw.
-			The process of using a tablesaw for this task includes
-			<ol>
-				<li> Measuring the cut </li>
-				<li> Setting the fence </li>
-				<li> Starting the blade </li>
-				<li> Making the cut </li>
-				<li> Stowing pieces </li>
-				<li> Shutting the tablesaw down </li>
-			</ol>
+			Mathematically, the factorial function is not a process, for <i>1! = 1</i>.
+			Computationally, the above function, also, is not a process:
+			The execution of the above does not guarantee a change in machine state.
+			In particular, two sequential calls at the same argument, e.g.,
+
+			<div class=in_text_code>
+				fact(3); // May or may not be a process<br>
+				fact(3); // Is not a process<br>
+			</div>
+
+			<br>guarantee that the second makes no change to machine state.
 		</p>
-
-		<img src="saw_blade.png" style="float: right; width: 40%;"></img>
-
-		<p>
-			Of these steps, we consider step 4, making the cut; we assume that
-			the fence has been set and the blade is in motion.
-			The blade on a circular saw acts on the wood by making a great number of
-			very small cuts.
-			Each cut is performed by a tooth,
-			and each tooth's pass is responsible for removing some quantity of wood.
-		</p>
-
-
-		<h2>Example: Imperative Programming </h2>
 
 		<h2>Example:  Mathematical Proofs</h2>
 		<p>
 			In his book <i>How to Prove It</i>, Daniel Velleman breaks down the
 			act of constructing a mathematical proof into a sequence of steps.
 			In particular,
-
 		</p>
 
+		<p>
+			The idea of breaking down a desired change into smaller steps is, in my opinion,
+			an enormously powerful concept.
+			Each step becomes a smaller, less complicated task, yields some distinct change, and
+			the change it yields becomes the basis for the next step&ndash; this last step being abstraction in the flesh.
+			Examples exist in the fields of carpentry, mass production, assembly lines, mathematical proofs and computer science.
+			Again, we will find that computer science provides the best domain for
+			expressing our ideas, from pre-conditions and post-conditions to abstraction itself.
+			Finally, I give a formal definition of processes.
+		</p>
 
+		<p>
+			Although the bulk of this development will be concerned with relations among processes,
+			it will usually be sufficient to consider some arbitrary ``simple process''.
+			For example, from the computer programmer's perspective, the machine instruction is the simplest process that can be considered; each machine instruction
+			maps machine state to machine state.
+			This is not the simplest process that can be considered; the layer underneath this is the realm of electrical engineers.
+			Conversely, we can easily "elevate" our perspective by adopting some high-level language, like C or Ruby;
+			in these cases, the simplest process is a single statement, and, while these statements also map machine state to machine state,
+			we consider them to alter the abstract computational environment to which they belong.
+		</p>
 
-
-
-	<p>
-
-
-	</p>
-
-	<p>
-		The idea of breaking down a desired change into smaller steps is, in my opinion,
-		an enormously powerful concept.
-		Each step becomes a smaller, less complicated task, yields some distinct change, and
-		the change it yields becomes the basis for the next step&ndash; this last step being abstraction in the flesh.
-		Examples exist in the fields of carpentry, mass production, assembly lines, mathematical proofs and computer science.
-		Again, we will find that computer science provides the best domain for
-		expressing our ideas, from pre-conditions and post-conditions to abstraction itself.
-		Finally, I give a formal definition of processes.
-	</p>
-
-	<p>
-		Although the bulk of this development will be concerned with relations among processes,
-		it will usually be sufficient to consider some arbitrary ``simple process''.
-		For example, from the computer programmer's perspective, the machine instruction is the simplest process that can be considered; each machine instruction
-		maps machine state to machine state.
-		This is not the simplest process that can be considered; the layer underneath this is the realm of electrical engineers.
-		Conversely, we can easily "elevate" our perspective by adopting some high-level language, like C or Ruby;
-		in these cases, the simplest process is a single statement, and, while these statements also map machine state to machine state,
-		we consider them to alter the abstract computational environment to which they belong.
-	</p>
-
-	</p>
-		More often, a single statement in a programming language is considered to be the primitive process.
-		In the opposite direction, an arbitrary process often belongs to a process greater than itself; in the case of the evaluation of a polynomial, it could be a test, an engineering problem, or other.
-		That is to say, the process of evaluating this will, probably, belong to a process; we will call this the ``metaprocess'' of the given process (or possibly the processor of the process).
-	</p>
+		</p>
+			More often, a single statement in a programming language is considered to be the primitive process.
+			In the opposite direction, an arbitrary process often belongs to a process greater than itself; in the case of the evaluation of a polynomial, it could be a test, an engineering problem, or other.
+			That is to say, the process of evaluating this will, probably, belong to a process; we will call this the ``metaprocess'' of the given process (or possibly the processor of the process).
+		</p>
 
 
 </p>
@@ -136,9 +125,10 @@
 
 <p>
 	A given <i>physical</i> process may be broken down indefinitely.
-	In the first example, sawing a piece of plywood, one component mentioned involved
-	pushing the piece through the saw.  This might be broken down into a sequence of bio-mechanical processes
-	involving feedback loops, which could be broken down into distinct chemical processes, which could be broken down further.
+	In the first example, sawing a piece of plywood, we mentioned "pushing the workpiece through the saw."
+	This might be broken down into a sequence of bio-mechanical processes.
+	Those could be broken down into distinct chemical processes.
+	Those could be broken down further still.
 </p>
 
 <p>
