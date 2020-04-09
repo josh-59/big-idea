@@ -24,16 +24,34 @@
 
 		<h1> The Process </h1>
 		<hr>
+		<p>
+			This paper introduces the process, a function without fixed points.
+			Intuitively, a process makes a change.
+		</p>
+
+
+		<h2> Definition </h2>
+		<p>
+			Suppose <i>X</i> is a nonempty set.
+			Then a function <i>p:X→X</i>&ensp;is a process if for all <i>x &#8712; X, p(x) &#8800; x</i>.
+		</p>
 
 		<p>
-			The idea of breaking down a desired change into smaller steps is, in my opinion,
-			an enormously powerful concept.
-			Each step becomes a smaller, less complicated task, yields some distinct change, and
-			the change it yields becomes the basis for the next step&ndash; this last step being abstraction in the flesh.
-			Examples exist in the fields of carpentry, mass production, assembly lines, mathematical proofs and computer science.
-			Again, we will find that computer science provides the best domain for
-			expressing our ideas, from pre-conditions and post-conditions to abstraction itself.
-			Finally, I give a formal definition of processes.
+			We might also say that <i>p</i> is a process on <i>X</i>.
+		</p>
+
+		<h2> Example 1: Successor Function </h2>
+
+		<p>
+			Probably the simplest process we can consider is the successor function,
+			<br><center><i>S:ℕ→ℕ by S(n) = n+1</i></center><br>
+		</p>
+
+		<p>
+			There are many things to learn about the process, but probably the most important is that each step in their execution is a process.
+			That is, when you suppose the process abstraction, you are, to my mind, supposing an infinitude of constituent processes.
+			For instance, taking the square of the argument is a process itself, easily decomposed into the appropriate parts.
+			Relative to the process in question, the computation of the polynomial, they are constituent processes.
 		</p>
 
 		<h2>Example: Sawing a sheet of plywood</h2>
@@ -78,47 +96,43 @@
 
 
 	<p>
--- Constituent Processes --
-It is worth noting that each step in this example is a process in itself.
-For instance, taking the square of the argument takes time, and involves observation, evaluation and dissolution.
+
+
 	</p>
 
 	<p>
-Because the bulk of this development will be concerned primarily with relations among processes, it will usually be sufficient to consider some arbitrary ``simple process''.
-For example, from the computer programmer's perspective, the machine instruction is the simplest process that can be considered; each machine instruction
-maps machine state to machine state.
-This is not the simplest process that can be considered; the layer underneath this is the realm of electrical engineers.
-Conversely, we can easily "elevate" our perspective by adopting some high-level language, like C or Ruby;
-in these cases, the simplest process is a single statement, and, while these statements also map machine state to machine state,
-we consider them to alter the abstract computational environment to which they belong.
-</p>
-
-</p>
-More often, a single statement in a programming language is considered to be the primitive process.
-In the opposite direction, an arbitrary process often belongs to a process greater than itself; in the case of the evaluation of a polynomial, it could be a test, an engineering problem, or other.
-That is to say, the process of evaluating this will, probably, belong to a process; we will call this the ``metaprocess'' of the given process (or possibly the processor of the process).
+		The idea of breaking down a desired change into smaller steps is, in my opinion,
+		an enormously powerful concept.
+		Each step becomes a smaller, less complicated task, yields some distinct change, and
+		the change it yields becomes the basis for the next step&ndash; this last step being abstraction in the flesh.
+		Examples exist in the fields of carpentry, mass production, assembly lines, mathematical proofs and computer science.
+		Again, we will find that computer science provides the best domain for
+		expressing our ideas, from pre-conditions and post-conditions to abstraction itself.
+		Finally, I give a formal definition of processes.
 	</p>
 
 	<p>
-
-	Although there are many things to learn about the process, probably the most important is that each step in their execution is a process.
-		That is, when you suppose the process abstraction, you are, to my mind, supposing an infinitude of constituent processes.
-	For instance, taking the square of the argument is a process itself, easily decomposed into the appropriate parts.
-	Relative to the process in question, the computation of the polynomial, they are constituent processes.
+		Although the bulk of this development will be concerned with relations among processes,
+		it will usually be sufficient to consider some arbitrary ``simple process''.
+		For example, from the computer programmer's perspective, the machine instruction is the simplest process that can be considered; each machine instruction
+		maps machine state to machine state.
+		This is not the simplest process that can be considered; the layer underneath this is the realm of electrical engineers.
+		Conversely, we can easily "elevate" our perspective by adopting some high-level language, like C or Ruby;
+		in these cases, the simplest process is a single statement, and, while these statements also map machine state to machine state,
+		we consider them to alter the abstract computational environment to which they belong.
 	</p>
-  Every process has three distinct parts:
+
+	</p>
+		More often, a single statement in a programming language is considered to be the primitive process.
+		In the opposite direction, an arbitrary process often belongs to a process greater than itself; in the case of the evaluation of a polynomial, it could be a test, an engineering problem, or other.
+		That is to say, the process of evaluating this will, probably, belong to a process; we will call this the ``metaprocess'' of the given process (or possibly the processor of the process).
+	</p>
+
+
 </p>
 
 <h2> Conclusion </h2>
-<h2> Definition </h2>
-<p>
-	Suppose <i>X</i> is a nonempty set.
-	Then a function <i>p:X->X</i> is a process if, for all <i>x &#8712; X, p(x) &#8800; x</i>.
-</p>
 
-<p>
-	We might also say that <i>p</i> is a process on <i>X</i>.
-</p>
 
 <p>
 	A given <i>physical</i> process may be broken down indefinitely.
