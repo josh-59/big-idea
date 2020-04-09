@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title> Abstraction in Action </title>
+  <link href="../style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li> <a href="../index.html"> Home </a></li>
+				<li> <a href="../abstraction/abstraction_home.html"> Abstraction </a></li>
+				<li> <a href="../about.html"> About </a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<br>
+
+	<main>
+
+    <h1> Abstraction in Action </h1>
+    <hr>
+
+    <p>
+      Abstracting is often found when one takes a new view of a thing.
+      Abstraction yields argumentation.
+    </p>
+
+    <h2> Example 1: Geometry </h2>
+    <p>
+      When watching a <a href="https://www.youtube.com/watch?v=hR599E7g7QY">Fantastic Super Precion Level Repair</a>, the host
+      demonstrated the base of the level was a small part of a very large sphere.
+      Given a micrometer, he observed a difference of 8.5 thousands of an inch
+      over a distance of approximately 1.875 inches:
+    </p>
+
+    <center><img src="sphere_of_level.png" style="width:70%"></img>
+    <br><br> Not Drawn to Scale</center>
+
+    <p>
+      Of course, <a href="https://www.mathopenref.com/arcradius.html">there is a formula</a>.
+    </p>
+
+
+    <h2> Example 2: Graph Theory </h2>
+    <p>
+      Our second example is Leonard Euler's famous solution to the K&ouml;onigsberg bridges problem.
+      The following passage is from John V Guttag's <i>Intoduction to Computation and Programming Using Python, second edition</i>, reprinted courtesy of the MIT Press:
+    </p>
+
+    <div class=reprint>
+    	<p>
+        "Graphs are typically used to represent situations in which there are interesting relations among the parts.  The first documented use of graphs in mathematics was in 1735 when the Swiss mathematician Leonhard Euler used what has come to be known as <b>graph theory</b> to formulate and solve the <b>K&ouml;nigsberg bridges problem.</b>
+    	</p>
+
+  		<p>
+        K&ouml;onigsberg, then the capital of East Prussia, was built at the intersection of two rivers that contained a number of islands.  The islands were connected to each other and to the mainland by seven bridges, as shown on the map on the left side of Figure 12.6.  For some reason, the residents of the city were obsessed with the question of whether it was possible to take a walk that crossed each bridge exactly once.
+  		</p>
+
+  		<p>
+        Euler's great insight was that the problem could be vastly simplified by viewing each separate landmass as a point (think "node") and each bridge as a line (think "edge") connecting two of these points.  The map of the town could then be represented by the graph to the right of the map in Figure 12.6.  Euler then reasoned that if a walk were to traverse each edge exactly once, it must be the case that each node in the middle of the walk (i.e., any island that is both entered and exited during the walk) must be connected by an even number of edges.  Since none of the nodes in the graph has an even number of edges, Euler concluded that it is impossible to traverse each bridge exactly once."
+      </p>
+    </div>
+
+		<p>
+      The set of bridges and islands in this example is precisely defined,
+      and so represents an object, in the First Order Language view of things.
+    </p>
+
+    <p>
+      The graph is an abstraction of the bridges.
+      Clearly, we have abstracted away from the bridges; less clearly, we also abstract away from the problem itself.
+      Euler rephrased the question in simpler terms with, "Is each island connected by an even number of bridges?"
+      The information to answer this question is preserved in the graph, and thus the question gets rephrased as,
+      "Is each node connected by an even number of edges?"
+    </p>
+
+    <p>
+      When we consult the graph and find that none of the nodes has an even number of edges,
+      we arrive at the conclusion that the walk is, indeed, not possible.
+      This conclusion represents an abstraction of our argument.
+    </p>
+
+    <h2> Conclusion </h2>
+    <p>
+      Abstraction comes in many forms.
+      In the previous example, the graph represented an <i>explicit</i> abstraction
+      of the collection of islands, and that pattern of thought is found throughout
+      much of applied mathematics.
+      We also, often, abstract implicitly by "assuming" the results of proofs
+      already undertaken.
+    </p>
+
+    <p>
+      Abstracting is an important part of reasoning.
+      For the intellect, it does a few  things:
+      <ol>
+        <li> Simplifies the picture to allow the intellect to focus on what is most important </li>
+        <li> Preserves the most relevant information </li>
+        <li> Opens up "mental space" to facilitate reasoning about these things </li>
+      </ol>
+      A point worth pondering:  If you <i>aren't</i> abstracting, then what are you doing?
+    </p>
+    <p>
+      <center> <a href="#">Top </a> </center>
+    </p>
+
+		<footer>
+			Questions, comments, criticisms? <a href="mailto:josh.m.timmons@gmail.com" > Leave me feedback!</a>
+		</footer>
+	</main>
+
+</body>
+</html>
