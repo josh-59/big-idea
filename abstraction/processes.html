@@ -43,43 +43,13 @@
 		<h2> Example 1: Successor Function </h2>
 
 		<p>
-			Probably the simplest process we can consider is the successor function,
+			Probably the simplest mathematical process we can consider is the successor function,
 			<br><center><i>S:ℕ→ℕ by S(n) = n+1</i></center><br>
 		</p>
 
 		<p>
 			Processes can be built up from constituent processes.
 			Conversely, processes can often be decomposed into simpler processes.
-		</p>
-
-		<h2> A Surprising Result </h2>
-		<p>
-			Consider the canonical implementation of the factorial function,
-			written in C:
-		</p>
-
-		<div class=in_text_code>
-			size_t fact(size_t n) {<br>
-				&emsp;&emsp;if( n <= 1 ) {<br>
-				&emsp;&emsp;&emsp;&emsp;	return 1;<br>
-				&emsp;&emsp;}<br>
-				<br>
-				&emsp;&emsp;return n*fact(n-1);<br>
-			}<br>
-		</div>
-
-		<p>
-			Mathematically, the factorial function is not a process, for <i>1! = 1</i>.
-			Computationally, the above function, also, is not a process:
-			The execution of the above does not guarantee a change in machine state.
-			In particular, two sequential calls at the same argument, e.g.,
-
-			<div class=in_text_code>
-				fact(3); // May or may not be a process<br>
-				fact(3); // Is not a process<br>
-			</div>
-
-			<br>guarantee that the second makes no change to machine state.
 		</p>
 
 		<h2>Example:  Mathematical Proofs</h2>
@@ -117,53 +87,49 @@
 			That is to say, the process of evaluating this will, probably, belong to a process; we will call this the ``metaprocess'' of the given process (or possibly the processor of the process).
 		</p>
 
+		<h2> Conclusion </h2>
 
-</p>
+		<p>
+			A given <i>physical</i> process may be broken down indefinitely.
+			In the first example, sawing a piece of plywood, we mentioned "pushing the workpiece through the saw."
+			This might be broken down into a sequence of bio-mechanical processes.
+			Those could be broken down into distinct chemical processes.
+			Those could be broken down further still.
+		</p>
 
-<h2> Conclusion </h2>
+		<p>
+			Similarly, any given computer program can be broken down into constituent processes.
+			In an imperative language, a program is composed of function calls.
+			Each function call is composed of a sequence of statements.
+			Each statement is a sequence of machine instructions.
+			Further, each machine instruction can be broken down into logical state-changes,
+			the concern of which is the electrical engineer.
+			Further still, each interaction of these changes can be understood at an atomic level.
+		</p>
 
+		<p>
+			Again, it is computer science that provides the key insight:
+			It doesn't matter how the change occurs, as long as it is realizable.
+			That is, we may ignore the implementing processes (details) as long as the desired process is attainable.
+			For instance, the C programmer <i>does not</i> concern himself with how
+			C code is translated into machine instruction; nor does he need to concern himself
+			with how instructions are carried out at the machine level.
+			The C programmer deals only with C statements; this simplification is the purpose of the C Programming Language.
+		</p>
 
-<p>
-	A given <i>physical</i> process may be broken down indefinitely.
-	In the first example, sawing a piece of plywood, we mentioned "pushing the workpiece through the saw."
-	This might be broken down into a sequence of bio-mechanical processes.
-	Those could be broken down into distinct chemical processes.
-	Those could be broken down further still.
-</p>
+		<p>
+			We will call these <i>viable pseudo-primitive processes</i>.
+			For example, within computer programming, an "Instruction Set Architecture" is a key abstraction layer:
+			Teams of electrical engineers produce a programmer-readable whitepaper describing the
+			set of instructions that the CPU is capable of performing, and their effect on the machine's state.
+			The CPU in question is guaranteed by its engineers to abide by the ISA, and as a
+			consequence, the instructions of the ISA form a set of viable pseudo-primitive processes, relative to the
+			CPU in question.
+		</p>
 
-<p>
-	Similarly, any given computer program can be broken down into constituent processes.
-	In an imperative language, a program is composed of function calls.
-	Each function call is composed of a sequence of statements.
-	Each statement is a sequence of machine instructions.
-	Further, each machine instruction can be broken down into logical state-changes,
-	the concern of which is the electrical engineer.
-	Further still, each interaction of these changes can be understood at an atomic level.
-</p>
-
-<p>
-	Again, it is computer science that provides the key insight:
-	It doesn't matter how the change occurs, as long as it is realizable.
-	That is, we may ignore the implementing processes (details) as long as the desired process is attainable.
-	For instance, the C programmer <i>does not</i> concern himself with how
-	C code is translated into machine instruction; nor does he need to concern himself
-	with how instructions are carried out at the machine level.
-	The C programmer deals only with C statements; this simplification is the purpose of the C Programming Language.
-</p>
-
-<p>
-	We will call these <i>viable pseudo-primitive processes</i>.
-	For example, within computer programming, an "Instruction Set Architecture" is a key abstraction layer:
-	Teams of electrical engineers produce a programmer-readable whitepaper describing the
-	set of instructions that the CPU is capable of performing, and their effect on the machine's state.
-	The CPU in question is guaranteed by its engineers to abide by the ISA, and as a
-	consequence, the instructions of the ISA form a set of viable pseudo-primitive processes, relative to the
-	CPU in question.
-</p>
-
-<p>
-  <center> <a href="#">Top </a> </center>
-</p>
+		<p>
+		  <center> <a href="#">Top </a> </center>
+		</p>
 		<footer>
 			 Questions, comments, criticisms? <a href="mailto:josh.m.timmons@gmail.com" > Leave me feedback!</a>
 		</footer>
