@@ -116,15 +116,19 @@
 			If it does nothing, then it isn't a thing!
 		</p>
 
-		<h2> Realized Metaprocess </h2>
+		<h2> Metaprocess </h2>
 
 		<p>
 			Processes can be built up from constituent processes.
-			Conversely, processes can often be decomposed into simpler processes.
+			The overarching process we will call a <i>metaprocess</i>.
 			The above C snippets are regularly decomposed into assembly language
-			(as by compilation); these assembly instructions may also be
-			processes.
+			(as by compilation).
+			If <i>x</i> is a C statement which forms a process, and if <i>x</i>
+			is compiled (into, say, x86), then some of the consituent assembly
+			statements are processes.
 		</p>
+
+		<h2 style="margin: 0"> Realized Metaprocess </h2>
 
 		<img src="img/metaprocess_with_4_constituents_blank.png" </img>
 
@@ -132,9 +136,13 @@
 			The idea of breaking down a desired change into smaller steps is, in my opinion,
 			an enormously powerful concept.
 			Each step becomes smaller and less complicated, while their
-			composition yields the same result as a single large process
-			(so that the act of decomposition affects no change, and is
-			not a process).
+			composition is equivalent to a single large process.
+			Key to this decomposing of processes is that the act of
+			decomposition is not a process on the process in question&mdash;
+			it manifests no change.
+			Because of this, we are free to consider the resulting metaprocess
+			alone, and ignore the constituent processes (and the means
+			by which they are composed).
 		</p>
 
 		<p>
