@@ -58,10 +58,7 @@
 
 		<p>
 			Each realized process has three distict parts: Argument,
-			Evaluation, and Result.
-			I intend this to be understood as, "The process's <i>argument</i>,"
-			"The process's <i>evaluation</i>,"
-			and "The process's <i>result</i>," respectively.
+			Evaluation, and Result:
 		</p>
 
 		<h2 style="margin: 0"> Realized Process </h2>
@@ -74,21 +71,72 @@
 			and result <i>p(a)</i>.
 		</p>
 
+		<h2> Example 2: Statements in High-Level Programming Languages </h2>
+		<p>
+			In a given high-level programming language, each statement that
+			makes a change makes a clearly defined change.
+			That is, there exists a well-defined state before the statement
+			is executed, and there exists a well-defined state after
+			the statement has executed.
+			When these states are different, the statement forms a process.
+		</p>
+
+		<p>
+			For instance, in C,
+		</p>
+
+		<div class="code">
+			x = x + 1;
+		</div>
+
+		<p>
+			Forms a process, while,
+		</p>
+
+		<div class="code">
+			x *= 2;
+		</div>
+
+		<p>
+			May or may not form a process (it does not when <code>x = 0</code>).  Also,
+		</p>
+
+		<div class="code">
+			x *= 1;
+		</div>
+
+		<p>
+			Certainly does not form a process.
+		</p>
+
+		<p>
+			We define processes in this way to isolate change.
+			We aren't interested in <i>the thing</i>, we're interested in
+			what the thing <i>does</i>.
+			If it does nothing, then it isn't a thing!
+		</p>
+
+		<h2> Metaprocesses </h2>
+
 		<p>
 			Processes can be built up from constituent processes.
 			Conversely, processes can often be decomposed into simpler processes.
-			Thus far, our development of <i>abstraction</i> has been an inquiry into
-			the process of observation.
+			The above C snippets are regularly decomposed into assembly language
+			(as by compilation); these assembly instructions may also be
+			processes.
 		</p>
 
 		<p>
 			The idea of breaking down a desired change into smaller steps is, in my opinion,
 			an enormously powerful concept.
-			Each step becomes a smaller, less complicated task, yields some distinct change, and
-			the change it yields becomes the basis for the next step&ndash; this last step being abstraction in the flesh.
-			Examples exist in the fields of carpentry, mass production, assembly lines, mathematical proofs and computer science.
-			Again, we will find that computer science provides the best examples.
+			Each step becomes smaller and less complicated, while their
+			composition yields the same result as a single large process
+			(so that the act of decomposition affects no change, and is
+			not a process).
 		</p>
+
+		<p>
+
 
 		<p>
 			Although the bulk of this development will be concerned with relations among processes,
