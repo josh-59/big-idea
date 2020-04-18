@@ -108,6 +108,12 @@ img {
   font-family: monospace;
 }
 
+.code{
+  font-size: 20pt;
+  margin-left: 25%;
+  font-family: monospace;
+}
+
 .footnote{
 	margin-left: 5%;
 	font-size: 20pt;
