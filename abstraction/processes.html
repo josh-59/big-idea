@@ -26,9 +26,8 @@
 		<hr>
 		<p>
 			This paper introduces the process, a function without fixed points.
-			All processes make change.
-			A process is <i>a set of potential changes</i>, or,
-			in the singular, a <i>change potential</i>.
+			All processes make change;
+			a process is <i>a set of changes</i>.
 		</p>
 
 		<h2> Definition </h2>
@@ -42,15 +41,22 @@
 		</p>
 
 		<h2> Example 1: Successor Function </h2>
-
 		<p>
 			Probably the simplest mathematical process we can consider is the successor function,
 			<br><center><i>S:ℕ→ℕ by S(n) = n+1</i></center><br>
 		</p>
 
+		<h2> Example 2: Nondivergent Process </h2>
+		<p>
+			A process need not be divergent. Let <i>p</i> be a process on <i>{0, 1, 2}</i>
+			by <i>p(x) = { 1 if x = 0; 2 if x = 1; 0 if x = 2}</i>.
+			Then <i>p</i> is a process with a range consisting of exactly
+			three elements.
+		</p>
+
 		<p>
 			In virtue of its mathematical definition, a process is a set
-			(of potential changes).
+			(of changes).
 			Of that set, we will typically be concerned with a single element
 			of it.
 			This we will call a <i>realized</i> process.
@@ -71,7 +77,7 @@
 			and result <i>p(a)</i>.
 		</p>
 
-		<h2> Example 2: Statements in High-Level Programming Languages </h2>
+		<h2> Example 3: Statements in High-Level Programming Languages </h2>
 		<p>
 			In a given high-level programming language, each statement that
 			makes a change makes a clearly defined change.
@@ -162,24 +168,20 @@
 			We will call this the "metaprocess" of the given process.
 		</p>
 
-		<h2> Conclusion </h2>
+		<h2> Thoughts </h2>
 
 		<p>
 			A given <i>physical</i> process may be broken down indefinitely.
-			In the first example, sawing a piece of plywood, we mentioned "pushing the workpiece through the saw."
-			This might be broken down into a sequence of bio-mechanical processes.
-			Those could be broken down into distinct chemical processes.
-			Those could be broken down further still.
-		</p>
-
-		<p>
-			Similarly, any given computer program can be broken down into constituent processes.
-			In an imperative language, a program is composed of function calls.
+			For instance, any computer program written in an imperative language
+			can be broken down into function calls, which would then be
+			constituent processes of the program.
 			Each function call is composed of a sequence of statements.
 			Each statement is a sequence of machine instructions.
-			Further, each machine instruction can be broken down into logical state-changes,
-			the concern of which is the electrical engineer.
-			Further still, each interaction of these changes can be understood at an atomic level.
+			Each machine instruction can be broken down into machine-state
+			changes, the details of which concern the electrical engineer,
+			and not the programmer.
+			Each interaction yielding these changes can be understood
+			at a deeper, physical level.
 		</p>
 
 		<p>
