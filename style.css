@@ -18,7 +18,7 @@ nav ul li {
   text-align: center;
   margin-right: 3%;
   visibility: visible;
-  font-size: 22pt;
+  font-size: 20pt;
 }
 
 main {
@@ -34,9 +34,11 @@ main {
 
 body main h1 {
 	text-align: center;
-	font-size: 37pt;
+	font-size: 30pt;
 	margin-top: 6%;
 	padding-top: 5%;
+	margin-bottom: 0;
+	padding-bottom: 0;
 }
 
 body main h2 {
@@ -79,7 +81,7 @@ img {
 .subh1 {
 	text-align: center;
 	font-style: italic;
-	margin-top: -1%;
+	margin-top: 0;
 }
 
 .quote_text {
@@ -160,8 +162,9 @@ html {
 
 hr {
     border: 0;
+	width: 65%;
     height: 2px;
-    margin:18px 0;
+    margin: 18px, auto;
     position:relative;
     background: -moz-linear-gradient(left, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 10%, rgba(0,0,0,0.65) 50%, rgba(0,0,0,0) 90%, rgba(0,0,0,0) 100%); /* FF3.6+ */
     background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(0,0,0,0)), color-stop(10%,rgba(0,0,0,0)), color-stop(50%,rgba(0,0,0,0.65)), color-stop(90%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
