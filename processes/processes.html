@@ -4,6 +4,16 @@
 <meta charset="utf-8">
 <title>The Process</title>
 <link href="../style.css" rel="stylesheet" type="text/css">
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']]
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
 </head>
 
 <body>
@@ -32,25 +42,30 @@
 
 		<h2> Definition </h2>
 		<p>
-			Suppose <i>X</i> is a nonempty set.
-			Then a function <i>p:X→X</i>&ensp;is a process if for all <i>x &#8712; X, p(x) &#8800; x</i>.
+			Suppose $X$ is a nonempty set.
+			Then a function $p:X→X$ is a process if for all $x &#8712; X, p(x) &#8800; x$.
 		</p>
 
 		<p>
-			We might also say that <i>p</i> is a process on <i>X</i>.
+			We might also say that $p$ is a process on $X$.
 		</p>
 
 		<h2> Example 1: Successor Function </h2>
 		<p>
-			Probably the simplest mathematical process we can consider is the successor function,
-			<br><center><i>S:ℕ→ℕ by S(n) = n+1</i></center><br>
+			Probably the simplest mathematical process we can consider is the successor function:
+			$$S:ℕ→ℕ \text{ by } S(n) = n+1$$
 		</p>
 
 		<h2> Example 2: Nondivergent Process </h2>
 		<p>
-			A process need not be divergent. Let <i>p</i> be a process on <i>{0, 1, 2}</i>
-			by <i>p(x) = { 1 if x = 0; 2 if x = 1; 0 if x = 2}</i>.
-			Then <i>p</i> is a process with a range consisting of exactly
+			A process need not be divergent. Let $p$ be a function on $\set{0, 1, 2}$ by
+			$$
+			p(x) = \begin{cases} 	\ 1 \text{ if } x = 0, \\
+						 			\ 2 \text{ if } x = 1, \\
+						 			\ 0 \text{ if } x = 2.
+				   \end{cases}
+			$$
+			Then $p$ is a process with a range consisting of exactly
 			three elements.
 		</p>
 
@@ -78,9 +93,9 @@
 		<h5 style="text-align: center; margin-top: -30px;"> The Realized Process </h5>
 
 		<p>
-			If <i>p</i> is a process, and <i>a</i> is an element in its domain,
-			then <i>(a,p(a))</i> is a realized process, with argument <i>a</i>
-			and resolution <i>p(a)</i>.
+			If $p$ is a process, and $a$ is an element in its domain,
+			then $(a,p(a))$ is a realized process, with argument $a$
+			and resolution $p(a)$.
 			We prefer <em>resolution</em> because the result of applying a process
 			on a given argument is always a valid argument for that process.
 		</p>
