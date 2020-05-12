@@ -126,7 +126,7 @@ MathJax = {
 		</div>
 
 		<p>
-			Forms a process, while,
+			forms a process, while,
 		</p>
 
 		<div class="code">
@@ -134,7 +134,8 @@ MathJax = {
 		</div>
 
 		<p>
-			May or may not form a process (it does not when <code>x = 0</code>, for instance).  Also,
+			may or may not form a process (it does not when <code>x = 0</code>, for instance).
+            In addition,
 		</p>
 
 		<div class="code">
@@ -159,81 +160,45 @@ MathJax = {
 			Processes can be built up from constituent processes.
 			The overarching process we will call a <i>metaprocess</i>.
 			The above C snippets are regularly decomposed into assembly language
-			(as by compilation).
-			If <i>x</i> is a C statement which forms a process, and if <i>x</i>
-			is compiled (into, say, x86), then some of the consituent assembly
-			statements are processes.
-		</p>
+			(by compilation).
+            When they are not compiled, they exist as processes only in the
+            abstract; that is, they are not realized.
+        </p>
 
 		<img src="img/metaprocess_with_4_constituents_blank.png" </img>
 		<h5 style="text-align: center; margin-top: -30px;"> Realized Metaprocess </h5>
 
+        <p>
+			If <i>x</i> is a C statement which forms a process, and if <i>x</i>
+			is compiled (into, say, x86), then some of the consituent assembly
+			statements are processes; moreover, their net result includes(?)
+            the statement given.
+            Finally, each of the above statements which <em>are not</em>
+            processes may be implemented by no constituent processes whatsoever.
+		</p>
 
 		<p>
-			The idea of breaking down a desired change into smaller steps is, in my opinion,
+			The idea of breaking down a desired change into smaller steps is
 			an enormously powerful concept.
 			Each step becomes smaller and less complicated, while their
 			composition is equivalent to a single large process.
+            In the case of the C programming language, it allows a
+            "high level" statement to be implemented by a comparatively
+            restricted instruction set architecture.
+        </p>
+
+        <p>
 			Key to this decomposing of processes is that the act of
 			decomposition is not a process on the process in question&mdash;
-			it manifests no change.
+			it implements the desired statement without making a change to it.
 			Because of this, we are free to consider the resulting metaprocess
 			alone, and ignore the constituent processes (and the means
-			by which they are composed).
+			by which they are composed);
+            that is, we abstract from implementation (by and large).
 		</p>
 
-		<p>
-			Although the bulk of this development will be concerned with relations among processes,
-			it will usually be sufficient to consider some arbitrary ``simple process''.
-			For example, from the computer programmer's perspective, the machine instruction is the simplest process that can be considered; each machine instruction
-			maps machine state to machine state.
-			This is not the simplest process that can be considered; the layer underneath this is the realm of electrical engineers.
-			Conversely, we can easily "elevate" our perspective by adopting some high-level language, like C or Ruby;
-			in these cases, the simplest process is a single statement, and, while these statements also map machine state to machine state,
-			we consider them to alter the abstract computational environment to which they belong.
-		</p>
+        <h2> Fielding </h2>
 
-		</p>
-			More often, a single statement in a programming language is considered to be the primitive process.
-			In the opposite direction, an arbitrary process often belongs to a process greater than itself; in the case of the evaluation of a polynomial, it could be a test, an engineering problem, or other.
-			We will call this the "metaprocess" of the given process.
-		</p>
-
-		<h2> Thoughts </h2>
-
-		<p>
-			A given <i>physical</i> process may be broken down indefinitely.
-			For instance, any computer program written in an imperative language
-			can be broken down into function calls, which would then be
-			constituent processes of the program.
-			Each function call is composed of a sequence of statements.
-			Each statement is a sequence of machine instructions.
-			Each machine instruction can be broken down into machine-state
-			changes, the details of which concern the electrical engineer,
-			and not the programmer.
-			Each interaction yielding these changes can be understood
-			at a deeper, physical level.
-		</p>
-
-		<p>
-			Again, it is computer science that provides the key insight:
-			It doesn't matter how the change occurs, as long as it is realizable.
-			That is, we may ignore the implementing processes (details) as long as the desired process is attainable.
-			For instance, the C programmer <i>does not</i> concern himself with how
-			C code is translated into machine instruction; nor does he need to concern himself
-			with how instructions are carried out at the machine level.
-			The C programmer deals only with C statements; this simplification is the purpose of the C Programming Language.
-		</p>
-
-		<p>
-			We will call these <i>viable pseudo-primitive processes</i>.
-			For example, within computer programming, an "Instruction Set Architecture" is a key abstraction layer:
-			Teams of electrical engineers produce a programmer-readable whitepaper describing the
-			set of instructions that the CPU is capable of performing, and their effect on the machine's state.
-			The CPU in question is guaranteed by its engineers to abide by the ISA, and as a
-			consequence, the instructions of the ISA form a set of viable pseudo-primitive processes, relative to the
-			CPU in question.
-		</p>
 
 		<p>
 			<center> <a href="#">Top </a> </center>
