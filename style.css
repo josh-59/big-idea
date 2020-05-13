@@ -24,7 +24,7 @@ nav ul li {
 main {
   width: 75%;
   margin: auto;
-  font-size: 18pt;
+  font-size: 16pt;
   background-color: #f5f3ed;
   padding-left: 7%;
   padding-right: 7%;
@@ -95,7 +95,7 @@ img {
   width: 1000px;
   margin-left: 57%;
   margin-top: 10px;
-  font-size:18pt;
+  font-size:16pt;
 }
 
 .caption {
@@ -189,37 +189,4 @@ hr:before {
 /* Getting fancy */
 ::selection {
 	background: #d9d7ef;
-}
-
-body main .resume h2 {
-  margin-top: -15px;
-  margin-bottom: -5px;
-  font-style: italic;
-  font-weight: normal;
-}
-
-body main .resume h3 {
-  margin-top: -5px;
-  font-size: 18pt;
-  font-weight: normal;
-}
-
-body main .resume h4 {
-  font-size: 22pt;
-  font-style: italic;
-  font-weight: lighter;
-  margin-bottom: -10px;
-}
-
-body main .resume {
-  font-size: 17pt;
-}
-
-body main .resume table tr th {
-  width: 250px;
-}
-
-body main .resume table tr td {
-  width: 400px;
-
 }
