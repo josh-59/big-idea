@@ -24,7 +24,7 @@ nav ul li {
 main {
   width: 75%;
   margin: auto;
-  font-size: 16pt;
+  font-size: 17pt;
   background-color: #f5f3ed;
   padding-left: 7%;
   padding-right: 7%;
@@ -43,7 +43,7 @@ body main h1 {
 
 body main h2 {
 	text-align: center;
-	font-size: 22pt;
+	font-size: 20pt;
 	margin-top: 5%;
 }
 
@@ -86,16 +86,17 @@ img {
 
 .quote_text {
 	width: 85%;
-  text-align: center;
+  	text-align: center;
 	margin: auto;
 	font-style: italic;
+
 }
 
 .quote_ref {
   width: 1000px;
   margin-left: 57%;
   margin-top: 10px;
-  font-size:16pt;
+
 }
 
 .caption {
