@@ -164,8 +164,6 @@ MathJax = {
 			The overarching process we will call a <i>metaprocess</i>.
 			The above C snippets are regularly decomposed into assembly language
 			(by compilation).
-            When they are not compiled, they exist as processes only in the
-            abstract; that is, they are not realized.
         </p>
 
 		<img src="img/metaprocess_with_4_constituents_blank.png" </img>
@@ -174,8 +172,8 @@ MathJax = {
         <p>
 			If <i>x</i> is a C statement which forms a process, and if <i>x</i>
 			is compiled (into, say, x86), then some of the consituent assembly
-			statements are processes; moreover, their net result includes(?)
-            the statement given.
+			statements are processes; moreover, their net resolution includes
+            the statement as it is given.
             Finally, each of the above statements which <em>are not</em>
             processes may be implemented by no constituent processes whatsoever.
 		</p>
@@ -194,15 +192,35 @@ MathJax = {
 			Key to this decomposing of processes is that the act of
 			decomposition is not a process on the process in question&mdash;
 			it implements the desired statement without making a change to it.
-			Because of this, we are free to consider the resulting metaprocess
-			alone, and ignore the means
-			by which they are composed;
-            that is, we may abstract from the implementation while retaining
-            pertinent information.
+            This says nothing about <em>other</em> changes or side-effects
+            the constituent processes may have.
 		</p>
 
         <h2> Fielding </h2>
+        <p>
+            Fielding is an abstraction of the resolution of a process.
+            For instance, consider the following C declaration:
+        </p>
 
+        <div class="code">
+            int arr[1024];<br>
+        </div>
+
+        <p>
+            At the end of this line, the C compiler is guaranteed to have
+            allocated <code>1024*sizeof(int)</code> bytes, contiguously, on the stack.
+            However, it does not guarantee that only <code>1024*sizeof(int)</code>
+            bytes have been used (it is often the case that compilers
+            use more memory than desired, in order to <a href="https://en.wikipedia.org/wiki/Data_structure_alignment">align elements in memory</a>).
+        </p>
+
+        <p>
+            Here, the assembly language code implementing this declaration
+            <em>fields</em> the allocation of space for 1024 <code>int</code>'s;
+            it might make other changes, but those do not concern us.
+            Another possible side-effect of this code is a change to the CPU's
+            cache state; again, this is irrelevant to the requested change.
+        </p>
 
 		<p>
 			<center> <a href="#">Top </a> </center>
