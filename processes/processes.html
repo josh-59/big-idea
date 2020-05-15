@@ -74,19 +74,17 @@ MathJax = {
 			nondivergent.
 		</p>
 
-		<h2 > Realized Process </h2>
-
+		<h2> Realized Process </h2>
 		<p>
-			In virtue of its mathematical definition, a process is a set
-			(of changes).
+			In virtue of its mathematical definition, a process is a set.
 			Of that set, we will typically be concerned with a single element
 			of it.
 			This we will call a <i>realized</i> process.
 		</p>
 
 		<p>
-			Each realized process has three distict parts: Context,
-			Evaluation, and Resolution:
+			Each realized process has two discernible elements,
+            Argument and Result:
 		</p>
 
 		<img src="img/process_1.png" title="Realized Process"></img>
@@ -94,19 +92,15 @@ MathJax = {
 
 		<p>
 			If $p$ is a process, and $a$ is an element in its domain,
-			then $(a,p(a))$ is a realized process, with context $a$
-			and resolution $p(a)$.
-			We prefer <em>resolution</em> because the result of applying a process
-			in a given context is always a valid argument for that process.
+			then $(a,p(a))$ is a realized process, with argument $a$
+			and result $p(a)$.
 		</p>
 
 		<p>
 			We seek to isolate change, and the tool that we will use to do
             so is the process.
-            Because the process is guaranteed to make a change, we seek
-            to isolate the process; viewing the "argument" of a realized process
-            as the process's context serves to reinforce the
-            isolation of the process.
+            Because the process is guaranteed to make a change,
+            expressing change is now a matter of utilizing the process.
 		</p>
 
 		<h2> Example 3: Statements in High-Level Programming Languages </h2>
@@ -157,13 +151,36 @@ MathJax = {
 			do not form processes.
 		</p>
 
+        <h2> Example 4:</h2>
+        <h2> $p: \mathcal{P}(\{1\}) → \mathcal{P}(\{1\})$</h2>
+
+        <p>
+            Let $X = \mathcal{P}(\{1\})$, the power set of the set containing $1$.
+            Then the only process on $X$ is,
+            $$
+            p(x) = \begin{cases} 	\ \{1\} \text{ if } x = \{\}, \\
+                                    \ \{\} \ \ \text{ if } x = \{1\}. \\
+                   \end{cases}
+            $$
+        </p>
+
+        <p>
+            We could have chosen "The set containing the empty set," or any
+            other set with a single element.
+        </p>
+
+
 		<h2> Metaprocess </h2>
 
 		<p>
 			Processes can be built up from constituent processes.
-			The overarching process we will call a <i>metaprocess</i>.
-			The above C snippets are regularly decomposed into assembly language
-			(by compilation).
+            A <em>metaprocess</em> is an abstraction of one or more processes.
+        </p>
+
+        <p>
+            Since a process is simply a set,
+			For instance, the above C snippets are regularly decomposed,
+            by compilation, into assembly language.
         </p>
 
 		<img src="img/metaprocess_with_4_constituents_blank.png" </img>
@@ -172,8 +189,8 @@ MathJax = {
         <p>
 			If <i>x</i> is a C statement which forms a process, and if <i>x</i>
 			is compiled (into, say, x86), then some of the consituent assembly
-			statements are processes; moreover, their net resolution includes
-            the statement as it is given.
+			statements are processes; moreover, their net result includes
+            the result of the statement as it is given.
             Finally, each of the above statements which <em>are not</em>
             processes may be implemented by no constituent processes whatsoever.
 		</p>
@@ -198,7 +215,7 @@ MathJax = {
 
         <h2> Fielding </h2>
         <p>
-            Fielding is an abstraction of the resolution of a process.
+            Fielding is an abstraction of the result of a process.
             For instance, consider the following C declaration:
         </p>
 
