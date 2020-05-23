@@ -1,9 +1,9 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<title>A More Formal View of Thinking </title>
-<link href="../style.css" rel="stylesheet" type="text/css">
+	<meta charset="utf-8">
+	<title>A More Formal View of Thinking </title>
+	<link href="../style.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -29,70 +29,70 @@
 			The idea that thinking is a process is introduced.
 		</p>
 
-    <p>
-      Consider the polynomial function,
-    </p>
+		<p>
+			Consider the polynomial function,
+		</p>
 
-    <div class="quote_text">
-      f(x) = x<sup>2</sup>  - 4.
-    </div>
+		<div class="quote_text">
+			f(x) = x<sup>2</sup>  - 4.
+		</div>
 
-    <p>
-      Obviously, this is an ordinary mathematical function; however, computing its value at, say, <i>x = 3</i>, is a process.
-      Specifically, it is a process over the set of all algebraic expressions.
-    </p>
+		<p>
+			Obviously, this is an ordinary mathematical function; however, computing its value at, say, <i>x = 3</i>, is a process.
+			Specifically, it is a process over the set of all algebraic expressions.
+		</p>
 
-    <p>
-      Let <i>p</i> be the process of evaluating <i>f</i> at <i>3</i>.
-      We break the evaluation of <i>f</i> into three distinct steps,
+		<p>
+			Let <i>p</i> be the process of evaluating <i>f</i> at <i>3</i>.
+			We break the evaluation of <i>f</i> into three distinct steps,
 			and consider each state <i>i</i> before each process takes place and
 			after each process takes place:
-    </p>
+		</p>
 
-    <div class="proc">
-      p(0):<br><br>
-      f(x) = x<sup>2</sup>  - 4;<br><br>
-      x = 3
-    </div>
+		<div class="proc">
+			p(0):<br><br>
+			f(x) = x<sup>2</sup>  - 4;<br><br>
+			x = 3
+		</div>
 
-    <p>
-      The next step will be to replace the chosen value for the independant variable and discard the assignment, <i>x = 3</i>:
-    </p>
+		<p>
+			The next step will be to replace the chosen value for the independant variable and discard the assignment, <i>x = 3</i>:
+		</p>
 
-    <div class="proc">
-      p(1):<br><br>
-      f(3) = 3<sup>2</sup> - 4
-    </div>
+		<div class="proc">
+			p(1):<br><br>
+			f(3) = 3<sup>2</sup> - 4
+		</div>
 
-    <p>
-      Next, we begin following the rules of order of operation, and square first:
-    </p>
+		<p>
+			Next, we begin following the rules of order of operation, and square first:
+		</p>
 
-    <div class="proc">
-      p(2):<br><br>
-      f(3) = 9 - 4
-    </div>
+		<div class="proc">
+			p(2):<br><br>
+			f(3) = 9 - 4
+		</div>
 
-    <p>
-      Finally, we subtract four and obtain the desired result:
-    </p>
+		<p>
+			Finally, we subtract four and obtain the desired result:
+		</p>
 
-    <div class="proc">
-      p(3):<br><br>
-      f(3) = 5
-    </div>
+		<div class="proc">
+			p(3):<br><br>
+			f(3) = 5
+		</div>
 
-    <p>
-      At this point, evaluation has concluded, and the process has ended.
-      Some notes from this example:
-    </p>
+		<p>
+			At this point, evaluation has concluded, and the process has ended.
+			Some notes from this example:
+		</p>
 
-    <p>
-      First, the process of evaluating an arithmetic expression is implicitly broken down into constituent steps.
-      In my opinion, we apply <i>the same</i> process (that is, <i>our</i> process) four distinct times, before we have completed the task.
-      That is, the overarching change, from <i>p(0)</i> to <i>p(3)</i> is the result of an abstract (or meta) process;
-      we implement this process by applying a more feasible process four distinct times.
-    </p>
+		<p>
+			First, the process of evaluating an arithmetic expression is implicitly broken down into constituent steps.
+			In my opinion, we apply <i>the same</i> process (that is, <i>our</i> process) four distinct times, before we have completed the task.
+			The overarching change, from <i>p(0)</i> to <i>p(3)</i> is the result of an abstract (or meta) process;
+			we implement this process by applying a more feasible process four distinct times.
+		</p>
 
 		<p>
 			As I picture it,
@@ -100,52 +100,55 @@
 			<center> <img src="img/3Process.png" style="width: 100%"> </img> </center>
 		</p>
 
-    <p>
-      Abstraction is present in many forms in this process.
+		<p>
+			Abstraction is present in many forms in this process.
 			At every step, we focus on one part of the expression, and ignore other parts;
-			this is one form of abstraction.
-			Replacing each expression in simpler terms (i.e., replacing <i>3<sup>2</sup></i> with <i>9</i>)
+			this is an implicit form of abstraction.
+			Replacing each expression with another which is simpler (i.e., replacing <i>3<sup>2</sup></i> with <i>9</i>)
 			is another form.
-     	In step two, we discard <i>x=3</i> as unecessary; while it may continue to be true that <i>x=3</i>,
-			it ceases to be relevant to the computation at hand after the value has been substituted, and the information is discarded.
-    </p>
-
-    <p>
-			All processes make change.
-			After making their change, the result of that process (the new or distinct state) remains unchanged until another process
-			changes it.
-			This can be placed within the process lifecycle as a "concluded" or "terminal" state by , for some nonzero length of time;
-			this is the simplest state that the process can be in.
-      After obtaining the result, <i>f(3) = 5</i>, that result sticks around until the individual discards it.
-			This is true for each <i>step</i> of the process, as well: <i>p(1)</i> observes the result of <i>p(0)</i>;
-			<i>p(2)</i> observes the result of <i>p(1)</i>, etc.
-			Each of these "observations of the result of the previous process" could be reframed as abstraction from the previous process.
+			In <em>p(1)</em>, we discard the information that <i>x=3</i>: Because <em>x</em> is no longer present,
+			this information is no longer relevant.
+			Finally, after obtaining the result in <em>p(3)</em>, we abstract from
+			the computation itself: <em>f(3) = 5</em> is all that we require.
+			This is analogous to accepting the conclusion of an argument
+			by discarding the reasoning that got us there.
 		</p>
 
 		<p>
-			This is a nontrivial distinction between computers and ordinary human intelligence:
-			After computation has taken place, if you were to ask a computer what the value of the expression is a second time,
-			it would execute the same sequence of steps a second time, whereas a human would not.
-			The result could be reframed as an abstraction of the computational process itself.
-    </p>
+			Now we look at the process more literally.
+			All processes make change.
+			After making their change, the result of a given process (a new and distinct state) remains unchanged
+			for some length of time.
+			This can be understood as a "resolved" state;
+			a process-state with nonzero duration, the lowest-energy state that a process can be in.
+			After the resolved state, a process ceases to exist.
+		</p>
+
+		<p>
+			For instance, after obtaining the result, <i>f(3) = 5</i>, that result sticks around
+			for some time, allowing the individual to use or reference it.
+			This is true <i>for each step</i> of the process, as well: <i>p(1)</i> observes the result of <i>p(0)</i>;
+			<i>p(2)</i> observes the result of <i>p(1)</i>, etc.
+			Each of these "observations of the result of the previous process" are abstractions from the previous process.
+		</p>
 
 		<h2> Conclusion </h2>
 		<p>
-			I do not feel that I've taken any gratuitous leaps with this assesment; I feel that this is a
-			clear portrayal of what's more or less expected of individuals as they learn mathematics.
+			I do not feel that I've taken any gratuitous leaps with this assessment; I feel that this is a
+			clear portrayal of what's more or less expected of individuals as they learn elementary mathematics.
 			It seems prudent to point out that I <i>am not</i> claiming that each state <i>p(i)</i> in the above process
 			is a consequence of a single abstraction.
-			Rather, I claim that the above process, and all activities of the human mind, can be implemented via abstraction alone,
+			Rather, I claim that the above process <em>can be implemented via abstraction alone</em>,
 			by considering and casting it in different lights.
 			We will require more theory to discuss this intelligently&ndash; in particular,
-			processes, the order of a process, and depth (or dimension).
+			processes.
 		</p>
 
-    <p>
-      <center> <a href="#">Top </a> </center>
-    </p>
+		<p>
+			<center> <a href="#">Top </a> </center>
+		</p>
 		<footer>
-			 Questions, comments, criticisms? <a href="mailto:josh.m.timmons@gmail.com" > Leave me feedback!</a>
+			Questions, comments, criticisms? <a href="mailto:josh.m.timmons@gmail.com" > Leave me feedback!</a>
 		</footer>
 	</main>
 
