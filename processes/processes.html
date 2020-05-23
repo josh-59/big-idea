@@ -178,7 +178,6 @@ MathJax = {
         </p>
 
         <p>
-            Since a process is simply a set,
 			For instance, the above C snippets are regularly decomposed,
             by compilation, into assembly language.
         </p>
@@ -188,7 +187,7 @@ MathJax = {
 
         <p>
 			If <i>x</i> is a C statement which forms a process, and if <i>x</i>
-			is compiled (into, say, x86), then some of the consituent assembly
+			is compiled (into, say, x86), then some of the constituent assembly
 			statements are processes; moreover, their net result includes
             the result of the statement as it is given.
             Finally, each of the above statements which <em>are not</em>
@@ -196,22 +195,15 @@ MathJax = {
 		</p>
 
 		<p>
-			The idea of breaking down a desired change into smaller steps is
-			an enormously powerful concept.
+			The act of breaking down a problem into smaller problems is
+			an enormously powerful problem-solving tool: A different question gets asked,
+			and a different question gets answered.
 			Each step becomes smaller and less complicated, while their
-			composition is equivalent to a single large process.
-            In the case of the C programming language, it allows a
+			composition yields the desired result.
+            In the case of the computer programming, it allows a
             "high level" statement to be implemented by a comparatively
             restricted instruction set architecture.
         </p>
-
-        <p>
-			Key to this decomposing of processes is that the act of
-			decomposition is not a process on the process in question&mdash;
-			it implements the desired statement without making a change to it.
-            This says nothing about <em>other</em> changes or side-effects
-            the constituent processes may have.
-		</p>
 
         <h2> Metaprocess Example 1 </h2>
         <p>
@@ -219,23 +211,30 @@ MathJax = {
         </p>
 
         <div class="code">
-            int arr[1024];<br>
+			int main() { <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int arr[1024];<br>
         </div>
 
         <p>
             At the end of this line, the C compiler is guaranteed to have
-            allocated <code>1024*sizeof(int)</code> bytes, contiguously, on the stack.
+            allocated <code>1024*sizeof(int)</code> contiguous bytes on the stack.
             However, it does not guarantee that only <code>1024*sizeof(int)</code>
             bytes have been used (it is often the case that compilers
             use more memory than desired, in order to <a href="https://en.wikipedia.org/wiki/Data_structure_alignment">align elements in memory</a>).
-        </p>
+            Another possible side-effect of this code is a change to the CPU's
+            cache state; again, this does not change the requested change.
+		</p>
 
         <p>
-            Here, the assembly language code implementing this declaration
-            <em>fields</em> the allocation of space for 1024 <code>int</code>'s;
-            it might make other changes, but those do not concern us.
-            Another possible side-effect of this code is a change to the CPU's
-            cache state; again, this is irrelevant to the requested change.
+            Because the result of the assembly language code is guaranteed to
+			include the allocation of <code>1024*sizeof(int)</code> bytes,
+			we say that the sequence of assembly instructions <em>fields</em>
+			the requested allocation.
+			That is, there exists a nontrivial abstraction of the result of
+			that sequence of instructions which includes the requested allocation.
+			Because of this guarantee, we are free to ignore the implementing
+			process(es), and treat the high-level statement (the metaprocess)
+			as a process existing of its own accord.
         </p>
 
 		<p>
