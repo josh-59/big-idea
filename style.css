@@ -51,6 +51,12 @@ body main h3 {
 	text-align: center;
 }
 
+body main h4 {
+	font-style: italic;
+	font-weight: lighter;
+	text-align: center;
+}
+
 body main ol {
   width: 80%;
   margin: auto;
