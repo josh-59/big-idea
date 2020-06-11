@@ -69,9 +69,7 @@
 			So what is an object?  I say that an object is a well-defined abstraction.
 			This means that it is a simplification (intuitively, a subset of all observable facets) of something else, with the caveat that
 			it is unique:  There is exactly one.
-			Through the individual constant, objects can be named, and thereby referred to.
 			Objects transcend language:  They belong to the mind alone.
-			There may be many names for a given object, or there may be none.
 		</p>
 
 		<p>
@@ -90,11 +88,41 @@
 			laboriously consider as though it really existed.
 		</p>
 
+		<h2> Names </h2>
 		<p>
-			In order to speak about objects, we use names.
+			Logic is <em>very</em> keen not to presuppose connections.
+			There are a few good examples of this, but the one I'm concerned with at the moment
+			is <em>names</em>.
+		</p>
+
+		<p>
+			In order to talk about an object, it is necessary to have a tangible reference
+			to it.
+			The usual words are <em>symbol</em>, for the "tangible reference" part,
+		 	and <em>denote</em>, for the "refers to" part.
+			The situation can be likened to pointers in C:
+		</p>
+
+		<img src="img/pointer.png">
+
+
+		<p>
+			For example, at the lower levels of mathematics, numerals (such as $1$)
+			are assumed to denote quantities, whereas at higher levels of mathematics,
+			this is occasionally called into question.
+			This might be done in order to develop the natural numbers in terms of sets, for instance.
+			Within such a context, $1$ would be considered a symbol, and what the symbol
+			denotes would be carefully developed.
+		</p>
+
+		<p>
+			There may be many names for a given object, or there may be none.
+		</p>
+
+		<p>
 			Once given that objects may be named, there are a few things that one can say about objects them.
 			The most basic thing that one can say is that two names
-			<em>refer to the same</em> object; this is done through the much-maligned
+			<em>denote the same</em> object; this is done through the much-maligned
 			equals sign, more appropriately thought of as <em>identity</em>:
 		</p>
 
@@ -103,10 +131,7 @@
 		$$
 
 		<p>
-			says that $a$ refers to the same object as $b.$
-		</p>
-
-		<p>
+			The above says that $a$ refers to the same object as $b.$
 			Both objects and names are mainstays of first-order languages;
 			concurrently, <em>identity</em> is often included in first-order languages.
 		</p>
@@ -128,10 +153,27 @@
 			we might say things like, "Hand me that blue thing over there."
 		</p>
 
+		<h2> Sentential / Truth-Functional Connectives </h2>
+
 		<p>
-			Better yet, consider a bottle of peanuts&mdash; we might say,
-			"Hand me those peanuts," when we mean, "Hand me that jar of peanuts."
+			For example, the semantics of the implication are taught in most
+			texts (including <em>An Introduction to Logic</em>) not to depend upon
+			any non-truth relation, so that a sentence like,
+			$$
+			\text{If the sky is blue, then } 2 + 2 = 4
+			$$
+			is considered a valid use of the implication connective.
+			As proof, the above implication is considered <em>true</em>, by modern logicians.
 		</p>
+
+		<p>
+			This is done for well-devised reasons:
+			<ol>
+				<li>Given a declarative sentence, we can always determine its truthity</li>
+				<li>By defining implication in terms of truth-values, we can make its meaning explicit</li>
+			</ol>
+
+
 			<center> <a href="#">Top </a> </center>
 		</p>
 
