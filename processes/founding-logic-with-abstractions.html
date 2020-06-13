@@ -33,28 +33,17 @@
 
 	<main>
 		<h1> Founding Logic with Abstractions </h1>
-		<p>
-			My other project, <a href="https://josh-59.github.io/Learning-Linux/">Learning Linux</a>,
-			has been remarkably successful in teaching me about Linux.
-			In addition, it's taught me to read works of all kinds, because the struggle in writing well
-			about Linux has been in using language to express ideas, where the ideas are well-founded, and the language is variable.
-			It struck me that a similar pattern was forming in my study of logic: That my own thoughts on logic
-			exist, but are not sufficiently defined to be unambiguous, and therefore,
-			my progress in learning the subject has stalled, somewhat.
-		</p>
+
+
+
+		<h2> Introduction </h2>
 
 		<p>
-			So, I endeavor to recapture the success of the Learning Linux project, in the study of logic.
-			The two books I'm reading on logic are, <em>Language, Proof and Logic</em>, 2<sup>nd</sup> ed., by Barker-Plumer et al., and
-			<em>An Introduction to Logic</em> by Patrick Suppes; I mention this because these, together, form the
-			foundation of my assumptions about logic.
-			<em>Language, Proof and Logic</em> is a contemporary work on the subject of logic; moreover,
-			because it is the work of three authors, I feel that it represents well the subject as it
-			is taught today.
-			<em>An Introduction to Logic</em> was written in 1957; although it is comparatively dated,
-			Patrick Suppes is a remarkable author, to such an extent that the many more modern renditions of
-			the same material strike me as secondary sources, by comparison.
+
+			Logic is <em>very</em> keen not to presuppose connections.
 		</p>
+
+		<h2> Objects </h2>
 
 		<p>
 			We begin with objects, namely, because this is where I choose to begin; in addition,
@@ -90,7 +79,7 @@
 
 		<h2> Names </h2>
 		<p>
-			Logic is <em>very</em> keen not to presuppose connections.
+			As said before, logic is <em>very</em> keen not to presuppose connections.
 			There are a few good examples of this, but the one I'm concerned with at the moment
 			is <em>names</em>.
 		</p>
@@ -103,20 +92,22 @@
 			The situation can be likened to pointers in C:
 		</p>
 
-		<img src="img/pointer.png">
+		<a href="img\pointer.png" title="Click for larger image"><img src="img/pointer.png"></a>
+
+		<p>
+			Intuitively, symbols are names for objects.
+			There my be many names for a given object, or there may be none.
+		</p>
 
 
 		<p>
 			For example, at the lower levels of mathematics, numerals (such as $1$)
 			are assumed to denote quantities, whereas at higher levels of mathematics,
 			this is occasionally called into question.
-			This might be done in order to develop the natural numbers in terms of sets, for instance.
+			This might be done in order to develop the natural numbers in terms of sets,
+			for instance.
 			Within such a context, $1$ would be considered a symbol, and what the symbol
 			denotes would be carefully developed.
-		</p>
-
-		<p>
-			There may be many names for a given object, or there may be none.
 		</p>
 
 		<p>
@@ -132,26 +123,23 @@
 
 		<p>
 			The above says that $a$ refers to the same object as $b.$
+		</p>
+
+		<p>
+			To give a concrete example, if we stipulate that the symbol $1$ denotes
+			the set containing the empty set, then we arrive at the truism that,
+		</p>
+
+		$$
+			1 = \{\{\}\}
+		$$
+
+		<p>
 			Both objects and names are mainstays of first-order languages;
 			concurrently, <em>identity</em> is often included in first-order languages.
 		</p>
 
-		<p>
-			Another thing one can say about objects, which the developments of
-			logic given above do not touch upon, is that one object may be contained in
-			another object.
-			Tentatively, we will define this as the <em>is</em> relation.
-			We define:
-			For any two objects $a$ and $b$, "$a$ <em>is</em> $b$" is true if and only
-			if $b$ is a correct abstraction of $a.$
-		</p>
 
-		<p>
-			This is used in natural language to make statements like, "That bottle is blue."
-			The abstraction denoted by "bottle" contains the abstraction "blue,"
-			and "blue" is a correct abstraction of the bottle;
-			we might say things like, "Hand me that blue thing over there."
-		</p>
 
 		<h2> Sentential / Truth-Functional Connectives </h2>
 
@@ -175,6 +163,48 @@
 
 			Indirection:
 			https://en.wikipedia.org/wiki/Fundamental_theorem_of_software_engineering
+		</p>
+
+		<p>
+			Another thing one can say about objects, which the developments of
+			logic given above do not touch upon, is that one object may be contained in
+			another object.
+			Tentatively, we will define this as the <em>is</em> relation.
+			We define:
+			For any two objects $a$ and $b$, "$a$ <em>is</em> $b$" is true if and only
+			if $b$ is a correct abstraction of $a.$
+		</p>
+
+		<p>
+			This is used in natural language to make statements like, "That bottle is blue."
+			The abstraction denoted by "bottle" contains the abstraction "blue,"
+			and "blue" is a correct abstraction of the bottle;
+			we might say things like, "Hand me that blue thing over there."
+		</p>
+
+		<h2> About </h2>
+		<p>
+			My other project, <a href="https://josh-59.github.io/Learning-Linux/">Learning Linux</a>,
+			has been remarkably successful in teaching me about Linux.
+			In addition, it's taught me to read works of all kinds, because the struggle in writing well
+			about Linux has been in using language to express ideas, where the ideas are well-founded, and the language is variable.
+			It seemed that a similar pattern was forming in the study of logic: That my own thoughts on logic
+			exist, but are not sufficiently defined to be unambiguous, and therefore,
+			progress in learning the subject has stalled.
+		</p>
+
+		<p>
+			So, I endeavor to recapture the success of the Learning Linux project, in the study of logic.
+			The two books I'm reading on logic are, <em>Language, Proof and Logic</em>, 2<sup>nd</sup> ed., by Barker-Plumer et al., and
+			<em>An Introduction to Logic</em> by Patrick Suppes; I mention this because these, together, form the
+			foundation of my assumptions about logic.
+			<em>Language, Proof and Logic</em> is a contemporary work on the subject of logic; moreover,
+			because it is the work of three authors, I feel that it represents well the subject as it
+			is taught today.
+			<em>An Introduction to Logic</em> was written in 1957; although it is comparatively dated,
+			Patrick Suppes is a remarkable author, to such an extent that the many more modern renditions of
+			the same material strike me as secondary sources, by comparison.
+		</p>
 
 
 			<center> <a href="#">Top </a> </center>
