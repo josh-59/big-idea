@@ -63,7 +63,6 @@
             it is <em>complete</em>; it is well-developed.
             This will be our pursuit.
         </p>
-
         
         <p>
             Logic is a large subject, and one that I have yet to spend the requisite
@@ -80,7 +79,7 @@
             <em>Language, Proof and Logic</em>, 2<sup>nd</sup> ed., by Dave Barker-Plumer,
 			Jon Barwise & John Etchemendy; and
 			<em>An Introduction to Logic</em> by Patrick Suppes.
-			We will use these frequently as reference.
+			These will frequently be referenced. 
 		</p>
 
         <h2> Starting Out </h2>
@@ -110,6 +109,11 @@
             <em>Axiomatic Set Theory</em> develops primarily set theory, using first-order logic to generate its
             rigorous development.
         </p>
+
+        <p>
+            I will borrow examples from all over.
+        </p>
+
 
 		<h2> Objects </h2>
 
@@ -200,7 +204,7 @@
         <h2> Making Statements </h2>
 
 		<p>
-			Once given that objects may be named, there are a few things that one can say about objects them.
+			Once given that objects may be named, there are a few things that one can say about them.
 			The most basic thing that one can say is that two names
 			<em>denote the same</em> object; this is done through the much-maligned
 			equals-sign, more appropriately thought of as <em>identity:</em>
@@ -224,8 +228,9 @@
 		$$
 
 		<p>
-		    I feel it prudent to reference the work of a more authoritative figure
-            about such a blanket statement regarding the equals-sign.
+		    I feel it prudent to reference the work of a more authoritative figure,
+            when I claim that this is the meaning of the equals-sign in (virtually all)
+            mathematical contexts.
             So, on page 4 of <em>Axiomatic Set Theory</em>, Dr. Patrick Suppes has this to say:
 
             <div class="quote_text">
@@ -236,6 +241,24 @@
                 is understood that equality means sameness of identity (which is what it does mean in almost
                 all ordinary mathematical contexts)."
             </div>
+        </p>
+
+        <p>
+            An example of using the identity relation poorly is given by Suppes, in Chapter 5 of <em>An Introduction to Logic</em>.
+            Paraphrasing, he says that some mathematicians might write that two line segments $AB$ and $CD$ of the same length are "equal", and write,
+            $$
+            AB = CD
+            $$
+            when $AB$ is distinct from $CD$.
+        </p>
+
+        <p>
+            "We shall never speak in this way," says Suppes.  
+            He goes on to point out that it is relatively easy to translate the above meaning into gramatically correct first-order language by
+            instead saying,
+            $$
+            length(AB) = length(CD)
+            $$
         </p>
 
         <p>
@@ -270,11 +293,26 @@
             2) Stipulates transitivity.
         </p>
 
-        </p>
+        <p>
             Both objects and names are mainstays of first-order languages;
 			concurrently, <em>identity</em> is often included in first-order languages.
+            However, note that because identity is a predicate, it does not necessarily belong
+            to a given first-order language.
+            As a consequence, it does not belong to first-order <em>logic</em>, per se, 
+            though it is usually developed there (for it is so common).
 		</p>
 
+        <p>
+            This discussion on identity has begun our study of <em>predicates</em>,
+            the formal conception of a statement.
+            From LPL:
+
+            <div class="quote_text">
+                "Predicate symbols are symbols used to express some property of objects or
+                some relation between objects."
+            </div>
+        </p>
+            
 		<h2> Sentential / Truth-Functional Connectives </h2>
 
 		<p>
