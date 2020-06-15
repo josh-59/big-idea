@@ -100,12 +100,12 @@
             "Saw(max, claire)," translated as <em>Max saw Claire</em>, and "Gave(claire, max)", translated
             <em>Claire gave Scruffy to Max</em>.
             The second is a major feature of the work, and is called "Tarski's World."
-            It has sentences like, <em>Cube(b)</em>, translated "<em>b</em> is a cube."
+            It has sentences like, <em>Cube(b)</em>, translated, "<em>b</em> is a cube."
             The third language developed in LPL is set theory.
         </p>
 
         <p>
-            Dr. Patrick Suppes has written two works, which to me are complimentary.
+            Dr. Patrick Suppes has written two works, which are complimentary.
             <em>An Introduction to Logic</em> develops primarily logic, using set theory as its exemplar language;
             <em>Axiomatic Set Theory</em> develops primarily set theory, using first-order logic to generate its
             rigorous development.
@@ -122,8 +122,16 @@
 			</div>
 		</p>
 
+        <p>
+            Later (Section 1.4), we find:
+            <div class="quote_text">
+                "But we construe the notion of an "object" pretty flexibly&mdash; to cover anything that we can make
+                about."
+            </div>
+        </p>
+
 		<p>
-			An object is a well-defined abstraction.
+			I say that an object is a well-defined abstraction.
 			This means that it is a simplification (intuitively, a subset of all observable facets) of something else, with the caveat that
 			it is unique:  There is exactly one.
 			Objects transcend language;
@@ -160,7 +168,7 @@
 		<p>
 			Intuitively, symbols are names for objects.
 			There my be many names for a given object, or there may be none, but first-order logic
-            requires that each name refer to exactly one object (LPL, 20).
+            requires that each name refer to exactly one object (LPL, page 20).
 		</p>
 
 		<p>
@@ -174,14 +182,7 @@
 		</p>
 
         <p>
-            Objects and their names belong to <em>language</em>, whereas the existence of
-            objects is common across all first-order languages (each language has them).  
-            As a consequence, objects and names are characterized and otherwise developed in 
-            first-order logic.
-        </p>
-
-        <p>
-            As I understand them:
+            The formal first-order logic terms for "names," as I understand them:
         </p>
 
         <ul>
@@ -202,7 +203,7 @@
 			Once given that objects may be named, there are a few things that one can say about objects them.
 			The most basic thing that one can say is that two names
 			<em>denote the same</em> object; this is done through the much-maligned
-			equals sign, more appropriately thought of as <em>identity</em>:
+			equals-sign, more appropriately thought of as <em>identity:</em>
 		</p>
 
 		$$
@@ -223,11 +224,56 @@
 		$$
 
 		<p>
-			Both objects and names are mainstays of first-order languages;
+		    I feel it prudent to reference the work of a more authoritative figure
+            about such a blanket statement regarding the equals-sign.
+            So, on page 4 of <em>Axiomatic Set Theory</em>, Dr. Patrick Suppes has this to say:
+
+            <div class="quote_text">
+                "One [logical] principle used, concerning which there is some disagreement in practice
+                among mathematicians, is that the double bar '=' is taken as the sign of identity.
+                The formula '$x=y$' may be read '$x$ is the same as $y$',  '$x$ is identical with $y$'
+                or '$x$ is equal to $y$'.  The last reading is permissible here only if it
+                is understood that equality means sameness of identity (which is what it does mean in almost
+                all ordinary mathematical contexts)."
+            </div>
+        </p>
+
+        <p>
+            For more on the subject of identity by Suppes, see Chapter 5 of <em>An Introduction to Logic</em>.
+        </p>
+
+        <p>
+            A typical use of identity in mathematics is found in Walter Rudin's <em>Principles of Mathematical Analysis</em>. 
+            In the definition of an ordered set, we find:
+        </p>
+
+        <p> <strong> Definition </strong> Let $S$ be a set.  An <em>order</em> on $S$ is a relation, denoted by &lt;,
+        with the following two properties:
+
+        <ol> 
+            <li> 
+                If $x\in S$ and $y\in S$ then one and only one of the statements
+                $$
+                x < y, \hspace{2em} x = y, \hspace{2em} y < x 
+                $$
+                is true.
+            </li>
+            <li> 
+                 If $x, y, z \in S$, if $x < y$ and $ y < z$, then $ x < z$.
+            </li>
+        </ol>
+        </p>
+
+        <p>
+            Intuitively, 1) States that, given any two elements of an ordered set, either one is larger than the
+            other, or they are the same element;
+            2) Stipulates transitivity.
+        </p>
+
+        </p>
+            Both objects and names are mainstays of first-order languages;
 			concurrently, <em>identity</em> is often included in first-order languages.
 		</p>
-
-
 
 		<h2> Sentential / Truth-Functional Connectives </h2>
 
