@@ -64,12 +64,7 @@
 			This will be our pursuit.
 		</p>
 
-		<p>
-			The only interest I have in the subject is in becoming a better mathematician.
-			The best book I have located for my purpose is, <em>Introduction to Logic</em>,
-			by Dr. Patrick Colonel Suppes (pronounced <em>Supp-Es</em>), a renowned mathematician
-			and American philosopher.
-		</p>
+
 
 		<p>
 			What I do have are some novel thoughts on the structure and purpose of the subject.
@@ -82,30 +77,24 @@
 			Another book on First-Order Logic that I will frequently reference is,
 			<em>Language, Proof and Logic</em>, 2<sup>nd</sup> ed., by Dave Barker-Plumer,
 			Jon Barwise, and John Etchemendy.
+			I will refer to this work as <em>LPL.</em>
 		</p>
+
+		<p><em>The single most important component of clear thinking is being explicit.</em></p>
 
 		<h2> Objects </h2>
 
 		<p>
-			We begin with objects, which they are fundamental to first-order logic.
+			We begin with objects, because they are fundamental to first-order logic.
 			Intuitively, an object is a <em>thing</em> that we may talk about.
-			In Section 1.1 of LPL, we find:
-
-			<div class="quote_text">
-				"Individual constants are simply symbols that are used to refer to some fixed individual object."
-			</div>
+			It's pretty important to have things to talk about&mdash;
+			otherwise, you're just making noises!
+			In a formal development, we consider each object
+			individually and explicitly.
 		</p>
 
 		<p>
-			Later, in Section 1.4, we find:
-			<div class="quote_text">
-				"But we construe the notion of an "object" pretty flexibly&mdash; to cover anything that we can make
-				about."
-			</div>
-		</p>
-
-		<p>
-			I say that an object is a well-defined abstraction.
+			An object is a well-defined abstraction.
 			This means that it is a simplification (intuitively, a subset of all observable facets) of something else, with the caveat that
 			it is unique:  There is exactly one.
 			Objects transcend language;
@@ -122,9 +111,10 @@
 
 		<p>
 			This uniformity is justified by my interpretation of mathematics:
-			The number <em>two</em> is an object (amongst mathematicians, this is beyond dispute),
-			and the number two is not "realized by" any physical entities.
-			But we can say that it, along with each other number, is a well-defined abstraction.
+			The number <em>two</em> is an object&mdash; specifically, a particular quantity&mdash;
+			and the number two is not "realized by" any physical entity.
+			Rather, it is a simplification away from the observation of multiple physical entities.
+			That is, the number two is an abstraction.
 		</p>
 
 		<h2> Names </h2>
@@ -133,36 +123,36 @@
 			to it.
 			The usual words are <em>symbol</em>, for the "tangible reference" part,
 			and <em>denotes</em>, for the "refers to" part.
+			For instance, the symbol $2$, as used above, denotes a quantity.
+		</p>
+
+
+		<p>
+			Intuitively, symbols are names for objects.
+			Formally, a symbol is an abstraction that refers to another abstraction.
 			The situation can be likened to pointers in C:
 		</p>
 
 		<a href="img\pointer.png" title="Click for larger image"><img src="img/pointer.png"></a>
 
-        <center><p style="font-size: small; width: 75%;"><em>
-            In C, a </em>pointer<em> is defined to be a variable that hold the address of another
-            variable.<sup><a href="#references">[3]</a></sup>
-            Hence, if </em>p<em> is a pointer, and </em>x<em> and </em>y<em> are also variables,
-            then we can arbitrarily assign to </em>p<em> the address of either </em>x<em> or </em>y<em> (or </em>p<em>), thereby giving ourselves a
-            new, albeit indirect, handle to the memory implicitly referred to by </em>x<em> or </em>y<em> (or </em>p<em>).
-        </em></p></center>
+				<center><p style="font-size: small; width: 75%;"><em>
+						In C, a </em>pointer<em> is defined to be a variable that hold the address of another
+						variable.<sup><a href="#references">[1]</a></sup>
+						Hence, if </em>p<em> is a pointer, and </em>x<em> and </em>y<em> are also variables,
+						then we can arbitrarily assign to </em>p<em> the address of either </em>x<em> or </em>y<em> (or </em>p<em>), thereby giving ourselves a
+						new, albeit indirect, handle to the memory implicitly referred to by </em>x<em> or </em>y<em> (or </em>p<em>).
+				</em></p></center>
 
-		<p>
-			Intuitively, symbols are names for objects.
-			There my be many names for a given object, or there may be none, but
+
+			There may be many names for a given object, or there may be none,
+			and also a name may not refer to any object, but we stipulate that
 			if a name refers to an object, then it refers to exactly one object.
 		</p>
 
 		<p>
-			For example, at the lower levels of mathematics,
-			the symbol $1$ denotes a quantity, whereas in higher levels of mathematics,
-			this is occasionally called into question.
-			This might be done in order to develop the natural numbers in terms of sets,
-			for instance.
-		</p>
-
-		<p>
-			Thus, being clear about names can be very important.
-			Here are some formal, First-Order Logic terms, as I understand them:
+			Being clear about names is part of <em>being clear</em> more broadly, so that
+			names are found in other developments of FOL, as well.
+			Here are some formal terms regarding names as I understand them:
 		</p>
 
 		<ul>
@@ -202,7 +192,7 @@
 
 		<p>
 			Once given that objects may be named, there are a few things that one can say about them.
-			The most basic thing that one can say is that two names
+			The most elementary thing that one can say is that two names
 			<em>denote the same</em> object; this is done through the much-maligned
 			equals-sign, more appropriately thought of as <em>identity:</em>
 		</p>
@@ -240,24 +230,6 @@
 		</p>
 
 		<p>
-			An example of using the identity relation poorly is given by Suppes, in Chapter 5 of <em>Introduction to Logic</em>.
-			Paraphrasing, he says that some mathematicians might write that two line segments $AB$ and $CD$ of the same length are "equal", and write,
-			$$
-			AB = CD
-			$$
-			when $AB$ is distinct from $CD$.
-		</p>
-
-		<p>
-			"We shall never speak in this way," says Suppes.
-			He goes on to point out that it is relatively easy to translate the above meaning into semantically correct first-order language by
-			instead saying,
-			$$
-			length(AB) = length(CD)
-			$$
-		</p>
-
-		<p>
 			For more on the subject of identity, see &#167;5.1, "Logic of Identity," of <em>Introduction to Logic.</em>
 		</p>
 
@@ -284,9 +256,9 @@
 		</p>
 
 		<p>
-			Intuitively, 1) States that, given any two elements of an ordered set, either one is larger than the
+			Intuitively, the first property states that, given any two elements of an ordered set, either one is larger than the
 			other, or they are the same element;
-			2) Stipulates transitivity.
+			the second property stipulates transitivity.
 		</p>
 
 		<p>
