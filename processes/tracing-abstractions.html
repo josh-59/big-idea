@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Tracing Abstractions</title>
+	<link href="../style.css" rel="stylesheet" type="text/css">
+	<script>
+	MathJax = {
+	  tex: {
+	    inlineMath: [['$', '$'], ['\\(', '\\)']]
+	  }
+	};
+	</script>
+	<script type="text/javascript" id="MathJax-script" async
+	  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+	</script>
+</head>
+
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li> <a href="../"> Home </a></li>
+				<li> <a href="./"> Processes </a></li>
+				<li> <a href="../about.html"> About </a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<br>
+
+	<main>
+		<h1>Tracing Abstractions</h1>
+		<hr>
+		<p>
+			Consider the following depiction of a second-order abstracting process:
+		</p>
+
+			<img src="img/tracing-abstractions.png">
+
+		<p>
+			Each realized process traces a finite sequence of abstractions.
+			The first realized process terminates at $(1)$,
+			then it jumps to $(2)$, tracing another sequence.
+		</p>
+
+		<p>
+			The salient point that this expresses is that $(2)$ is later in time
+			than $(1)$.
+			More, at $(2)$, the process is <em>re</em>-viewing the abstractions
+			traced by the realized process terminating at $(1)$.
+		</p>
+
+		<p>
+			This is an avenue for change; if the process changes implicitly
+			through the course of a trace, then re-veiwing is nontrivial.
+		</p>
+
+			<center> <a href="#">Top </a> </center>
+		</p>
+
+		<footer>
+			Questions, comments, criticisms? <a href="mailto:josh.m.timmons@gmail.com" > Leave me feedback!</a>
+		</footer>
+	</main>
+
+</body>
+</html>
