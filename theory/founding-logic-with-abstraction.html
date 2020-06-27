@@ -37,14 +37,12 @@
 		<p>
 			We begin with objects, because they are fundamental to first-order logic.
 			Intuitively, an object is a <em>thing</em> that we may talk about.
-			In a formal development, we consider each object
-			individually and explicitly.
 		</p>
 
 		<p>
-			An object is a well-defined abstraction.
+			<strong>Definition</strong> An <em>object</em> is a well-defined abstraction.
 			This means that it is a simplification (intuitively, a subset of all observable facets) of something else, with the caveat that
-			it is unambiguous.
+			it be distinct.
 			Objects transcend language;
 			they belong to the mind alone.
 		</p>
@@ -60,30 +58,37 @@
 
 		<p>
 			This uniformity is justified by my interpretation of mathematics:
-			The number <em>two</em> is an object&mdash; specifically, it's a particular quantity&mdash;
+			<em>The number two</em> is an object&mdash; specifically, it's a particular quantity&mdash;
 			and the number two is not "realized by" any physical entity.
 			Rather, it is a simplification away from the observation of multiple physical entities.
 			That is, the number two is an abstraction.
 		</p>
 
-		<h2> Symbols </h2>
+		<h2> Names </h2>
 		<p>
+			In a formal development, we usually consider each object
+			individually and explicitly.
 			In order to talk about an object, it is necessary to have a tangible reference
 			to it.
-			These tangible references will be called <em>symbols.</em>
-			A symbol is a unique, identifiable abstraction from something written.
+			The tangible portion of such a reference  will be called
+			an <em>expression.</em>
+			An expression is a unique, identifiable abstraction from something written.
+			It could be a symbol, a short word, or a lengthy description.
 		</p>
 
 		<p>
-			Hence, $$x$$ is a symbol, as is $$max.$$
+			Hence, $$x$$ is an expression, as is $$max,$$ as is $$\text{left of home plate.}$$
 		</p>
 
 		<p>
-			When a symbol is defined to refer to an object,
-			it is called a <em>name</em>, and we will say that the symbol <em>denotes</em> the object.
-			The restriction is imposed that, if a symbol refers to an object,
-			it refers to exactly one object.
-			Formally, a <em>name</em> is a unique abstraction that refers to another unique abstraction.
+			When an expression refers to an object,
+			it is called a <em>term</em>, and we will say that the term <em>denotes</em> the object.
+			The restriction is imposed that, if an expression denotes an object,
+			then it refers to exactly one object.
+		</p>
+
+		<p>
+			Formally, a <em>term</em> is a distinct abstraction that refers to another distinct abstraction.
 			The situation can be likened to pointers in C:
 		</p>
 
@@ -99,11 +104,12 @@
 
 		<p>
 			For example, the symbol $2$, as used above, denoted a quantity; it is therefore a
-			name.
+			term.
+			Variables are defined separately.
 		</p>
 
 		<p>
-			<strong>Definition:</strong> A <em>variable</em> is a symbol that does not denote anything.
+			<strong>Definition:</strong> A <em>variable</em> is an expression that does not denote anything.
 		</p>
 
 		<p>
