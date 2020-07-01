@@ -49,123 +49,49 @@
 		<p>
 			"extant in" was chosen because I'm choosing to focus my attention
 			on the process of abstraction.
-
-
-
 			This choice means that the "order" of any process is
-			well-defined, without introducing "time."
+			well-defined, without introducing time.
 		</p>
 
 		<p>
-			Of any given sequence of processes, the first will always be zero-order.
-			In addition, a realized process in such a sequence
-			will increase in order by at most one, relative to the previous process.
-		</p>
-
-		<p>
-
-
-		<p>
-			When speaking about sequences of realized processes that are stable with respect to order,
-			we will characterize them by the order of their
+			We will principally be concerned with abstracting processes that are stable
+			with respect to order (which is most of them).
+			As such, we will characterize them by the order of their
 			normative realized process.
 			So,
 		</p>
 
 		<center><img src="img/1-2-3-4-order.png" style="width: 100%;"></img></center>
 
+		<h2> Intellect </h2>
 		<p>
-
-
-
-		<h2>Clever</h2>
-		<p>
-			A concept distinct from, though related to, intelligence, a process is
-			<i>clever</i> if it looks ahead.
-			Being clever <em>can increase</em> intelligence, but is not
-			guaranteed to do so.
-			This will be phrased formally as concurrence among processes.
-		</p>
-
-		<h2>Creative and Optimizing</h2>
-		<p>
-			One (inelegant) approach to generating a learning process would involve
-			a single process being alternatively creative (i.e., trying new things)
-			and optimizing (i.e., discarding suboptimal solutions).
-		</p>
-
-		<h2>Schizo</h2>
-		<p>
-			A more elegant approach to generating a learning process would
-			be to implement an optimizing function that sees
-			the same thing in two distict lights simultaneously.
-			Thus, each "creative" and "optimizing" would occur
-			as a result of the same process.
-		</p>
-
-		<h2>Intellect</h2>
-		<p>
-			My target object is the intellect, a self-conscious, learning
-			process of order <i>n > 0</i> and depth <i>k > 3</i>, I believe.
-			I think that the mind is, effectively, a data structure.
-			Specifically, it is a data structure which is <i>active</i>,
-			as opposed to <i>static</i>.
+			An intellect is an abstracting process of order at least 1, with depth
+			at least 1.
 		</p>
 
 		<p>
-			Moreover, I think that it is a data structure which operates in
-			<i>O(0)</i> (Big-Oh-Zero) time; that is, it is infinitely
-			economizing.
-			As a conjecture, I think that any data structure operating in
-			<i>O(0)</i> time will prove to be an intellect (and thus be
-			an "AI" as think of them).
+				Conceptually, an intellect is a pattern of thinking.
+				In particular, we do not care about <em>the content</em> of thought, in
+				the definition of intellect.
+				We require that the abstracting process that an intellect fields at any given
+				time is unique (in order to be implemented).
 		</p>
+
+		<h2> Memory profile </h2>
+		<p>
+			In order to implement <em>intellect,</em> we will require a method
+			of defining semi-discrete (overlapping) abstractions.
+			One method of doing so would be to define their overlap <em>implicitly,</em>
+			as a consequence of a particular <em>memory</em> or <em>remembrance</em>
+			profile:
+		</p>
+
+		<img src="img/mem-profile.png">
 
 		<h2> Consciousness </h2>
 		<p>
-			A process which can enact change upon itself is conscious.
+			A process which can affect change upon itself is conscious.
 		</p>
-
-		<h2> Meaning </h2>
-		<p>
-			Meaning strikes me as, "the difference it makes;" that is, significance
-			is the change implied (by a given thing).  It might be sufficient
-			to clause significance within a conditional.
-			It isn't enough to be <em>convincing</em>; without consequence, a
-			statement is meaningless.
-			This "convincingness" is seen across domains: In the pursuit of
-			mathematics for its own sake, when it is curious and "true," but
-			without application.
-		</p>
-
-		<p>
-			My point is, if a given statement or artifact makes no change, then
-			it has no significance, has no meaning, and is not a process.
-			As yet, this development of "meaning" is general, and without
-			direction.
-		</p>
-
-		<h2> Sincerity </h2>
-		<p>
-			Concurrence among active processes; dependant upon "order."
-			Both this and "meaning" are context-driven.
-		</p>
-
-		<h2> Context-Driven </h2>
-		<p>
-			A process is context-driven if the change it makes is
-			dependant upon the context in which it is applied.
-			For instance, the the successor function <em>is not</em>
-			context-driven, for at each input, it simply adds one.
-			On the other hand, the squaring function over the positive
-			integers is context-driven.
-		</p>
-
-    <h2> Emotion </h2>
-    <p>
-        The "cost" of dereferencing abstractions;
-        the "effect" of belief.
-    </p>
 
 		<h2> Belief </h2>
 		<p>
@@ -195,23 +121,7 @@
 				This, I think, will be the formal interpretation of "ego."
 		</p>
 
-		<p>
-			<strong>Note:</strong> It isn't my goal to implement, realize,
-			or even define beliefs or paradigms, but only to understand them
-			well enough to see <em>that</em> and <em>how</em> they could/might
-			be realized through a particular implementation.
-		</p>
 
-		<h2> Intellect </h2>
-		<p>
-				Conceptually, an intellect is a pattern of thinking.
-				In particular, we do not care about <em>the content</em> of thought, in
-				the definition of intellect.
-				We only concern ourselves with the pattern of abstractions that it generates.
-				The abstracting process that an intellect fields at any given
-				time is unique.
-				That is, the intellect is deterministic.
-		</p>
 
 		<h2> Intellect As a Data Structure </h2>
 
@@ -226,27 +136,82 @@
 			a "General Artificial Intelligence").
 		</p>
 
-		<h2> Memory profile </h2>
+		<h2>Clever</h2>
 		<p>
-			In order to implement <em>intellect,</em> we will require a method
-			of defining semi-discrete (overlapping) abstractions.
-			One method of doing so would be to define their overlap <em>implicitly,</em>
-			as a consequence of a particular <em>memory</em> or <em>remembrance</em>
-			profile:
+			A concept distinct from, though related to, intelligence, a process is
+			<i>clever</i> if it looks ahead.
+			Being clever <em>can increase</em> intelligence, but is not
+			guaranteed to do so.
+			This will be phrased formally as concurrence among processes.
 		</p>
 
-		<img src="img/mem-profile.png">
+		<h2>Creative and Optimizing</h2>
+		<p>
+			One approach to generating a learning process would involve
+			a single process being alternatively creative (i.e., trying new things)
+			and optimizing (i.e., discarding suboptimal solutions).
+		</p>
+
+		<p>
+			One approach to implementing the above might be
+			to implement an optimizing function that sees
+			the same thing in two distict lights simultaneously.
+			Thus, each "creative" and "optimizing" would occur
+			as a result of the same process.
+		</p>
+
+		<h2> Emotion </h2>
+		<p>
+				The "cost" of dereferencing abstractions;
+				the "effect" of belief.
+				I think there's a connection between <em>belief</em> and <em>emotion</em> that,
+				in part, guides the simplying process.
+		</p>
+
+		<h2> Meaning </h2>
+		<p>
+			Meaning strikes me as, "the difference it makes;" that is, significance
+			is the change implied (by a given thing).  It might be sufficient
+			to clause significance within a conditional.
+			It isn't enough to be <em>convincing</em>; without consequence, a
+			statement is meaningless.
+			This "convincingness" is seen across domains: In the pursuit of
+			mathematics for its own sake, when it is curious and "true," but
+			without application.
+		</p>
+
+		<p>
+			My point is, if a given statement or artifact makes no change, then
+			it has no significance, has no meaning, and is not a process.
+			As yet, this development of "meaning" is general, and without
+			direction.
+		</p>
+
+		<h2> Context-Driven </h2>
+		<p>
+			A process is context-driven if the change it makes is
+			dependant upon the context in which it is applied.
+			For instance, the the successor function <em>is not</em>
+			context-driven, for at each input, it simply adds one.
+			On the other hand, the squaring function over the positive
+			integers is context-driven.
+		</p>
+
+		<p>
+			<strong>Note:</strong> It isn't my goal to implement, realize,
+			or even define beliefs or paradigms, but only to understand them
+			well enough to see <em>that</em> and <em>how</em> they could/might
+			be realized through a particular implementation.
+		</p>
+
+		<h2> Sincerity </h2>
+		<p>
+			Concurrence among active processes.
+			Both this and "meaning" are context-driven.
+		</p>
 
 		<h2> Stability </h2>
 		<p>
-			The goal of this development is, intuitively, <em>to trap</em> a
-			data structure and an algorithm into thinking.
-			If we are successful, then <em>stability</em> will not
-			be a matter of "failure."
-		</p>
-
-		<p>
-			Nonetheless, stability will become an important consideration.
 			Stability is the resistance to change about the beliefs of the intellect;
 			effectively, then, instability determines the volatility of the simplifying
 			process.
