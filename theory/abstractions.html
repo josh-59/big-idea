@@ -40,90 +40,85 @@
 			and the existence of some observable phenomenon.
 		</p>
 
-		<h2> Example 1: <i>f</i>&ensp;is a function </h2>
+		<h2> Example 1: A Book </h2>
+		<p>
+
+		</p>
+
+		<h2> Example 2: <i>f</i>&ensp;is a function </h2>
 		<p>
 			Often, the first description of a function that a student encounters is that it's like a machine:
 			You plug in a number, turn the crank, and, since <i>f</i> &nbsp;is a function, a unique value pops out.
 			This is an abstraction of functions:  It preserves the notion that a function acts on an argument and returns
-			a unique value, while ignoring the symbolic baggage usually associated with definitions.
+			a unique value, while ignoring the symbolic baggage usually associated with a formal definition.
 		</p>
 
 		<p>
-			The abstraction above is intended as a bridge:  It gets the student working
+			The abstraction above is intended as a bridge:  It is intended to get the student working
 			with functions with a so-far accurate description.
-			Eventually, this description will be discarded (the "bridge" will be crossed), and
+			Eventually, this description will be discarded, and
 			the student will be expected to adopt a formal definition of the object.
 		</p>
 
 		<p>
 			Several fields provide great numbers of good examples of abstractions.
-			In my experience, the clearest ones are found in computer science, where abstraction is extremely important
-			(it helps to manage complexity), and is necessarily defined in digital terms.
+			In my experience, the clearest ones are found in computer science, where
+			abstraction is extremely important, and is necessarily defined in concrete terms
+			(in virtue of the bit).
+			In computing, detail is hidden to produce something that does the same thing, but appears simpler.
+			An example of this is considering the Linux Kernel's some 20-million lines of
+			code to be a single entity.
 			I also wish to say that computer science provided the genesis of this entire development, specifically,
 			<a href="https://www.joelonsoftware.com/2002/11/11/the-law-of-leaky-abstractions/"> Joel Spolsky's <i>The Law of Leaky Abstractions</i></a>.
 			To express my appreciation, and for a clear example of an abstraction, I ask that you read his essay.
 		</p>
 
-		<h2> Example 2: The C Programming Language </h2>
+		<h2> Example 3: Imperative Programming Languages </h2>
 		<p>
-			C is an imperative programming language, providing abstractions of both memory and functions.
-			The imperative programming style is characterized by writing functions to carry out tasks, thereby breaking up a complex task into a sequence of function calls that each carry out a simpler task.
-			Intrinsic to this process is the abstraction away from these functions; they are written, tested, and then used to more easily create more sophisticated programs.
+			The imperative programming style is characterized by writing functions
+			to carry out tasks, thereby breaking up a complex task into a sequence
+			of function calls that each carry out a simpler task.
+			Intrinsic to this process is the abstraction away from these functions;
+			they are written, tested, and then used to more easily create more sophisticated programs.
 		</p>
 
 		<p>
 			For any given subroutine, we abstract away from the implementing code by creating and naming the function uniquely.
 			With this definition in hand, we simplify our mental picture to a ''black box'' that carries out a given task.
-			It is important to the imperative programming paradigm <i>to forget</i> how it works:
+			It is important to the imperative programming paradigm <i>to forget</i> how the ''black box'' works:
 			Ignoring the implementing details hides the complexity of the whole.
 		</p>
 
-		<h2> Example 3: An Automobile </h2>
-		<p>
-			Abstractions come in all shapes and sizes, and also vary widely in both precision and accuracy.
-			Often, one abstracts out of necessity.
-			For instance, even an ordinary car cannot be conceived of in totality.
-			Rather, we abstract away from it.
-			We might say, "There's something wrong with the engine."
-			And a mechanic might respond with, "Ah, you need a new exhaust."
-			We tend to work with only as much information as we must, and our vehicle for doing this is the abstraction.
-		</p>
-
-		<p>
-			In the physical science, abstractions are very precise, and are called <i> models</i>, a term we will borrow later on.
-			From <a href="https://openstax.org/books/university-physics-volume-1/pages/1-1-the-scope-and-scale-of-physics"> OPENSTAX University Physics Volume 1, page 14</a>,
-			"A model is a representation of something that is often too difficult (or impossible) to display correctly."
-			Continuing with our car example, we might model its position by considering it to be a point;
-			similarly, we might simplify its changing velocity (which may involve extremely complex interactions within the vehicle)
-			to a function over time.
-			From this, we can draw conclusions about the car.
-		</p>
-
-		<h2> Example 4: Statement Logic </h2>
+		<h2> Example 4: Propositional Logic </h2>
 		<p>
 			As a mathematics student, I have studied propositional logic more than once.
-			For me, it is very much an intellectual tool:  Much like a table or a diagram, it serves to aid my thinking.
-			The usefulness of propositional logic is that it begins abstracting from the statement: I, the mathematician, can view any statement <i>as a proposition</i>, and that proposition becomes an abstraction of my statement.
-			This immediately recasts my statement into the field of propositional logic, where substantial and relevant theory exists.
-			Concurrently, the mathematician uses this theory to his or her advantage.
-			That is, my concern with the subject of logic is not the field itself, but rather what the field can tell me about the situation at hand.
+			For me, it is an intellectual tool:  Much like a table or a diagram, it serves to aid my thinking.
+			The usefulness of propositional logic is that it begins abstracting from the statement:
+			As a mathematician, I can view any statement <i>as a proposition</i>,
+			and that proposition becomes an abstraction of my statement.
+			This recasts my statement into the field of propositional logic, where substantial and relevant theory exists.
 		</p>
 
-		<h2> Example 5: Propositional Logic </h2>
+		<h2> Example 5: Logic: Inference as Abstraction</h2>
 		<p>
-			The transitive law of implication is a commonly used rule in
-			propositional logic.  It states that, given "A implies B", and
+			In propositional logic, the transitive law of implication
+			is a commonly developed rule.
+			Loosely, it states that, given "A implies B", and
 			"B implies C", we may conclude "A implies C."
 		</p>
 
 		<p>
 			The above reasoning is an act of abstraction:
 			We are discarding statement <i>B</i> in its entirity.
+			Moreover, the rule itself is an abstraction from the
+			thinking (development) that fielded it.
 		</p>
 
 		<h2>Definition of Abstraction</h2>
 		<p>
-			In order to found this work on a bedrock of sanity, I have collected a few definitions of the word <i>abstraction.</i>
+			I have yet to produce a satisfactory definition of the word <em>abstraction.</em>
+			As yet, I view it intuitively as <em>discarding.</em>
+			Below are a few definitions that support this notion.
 		</p>
 		<br>
 
@@ -167,17 +162,9 @@
 
 		<p>
 			It is my belief that the entirety of the human mind can be
-			specified through the process of abstraction alone.
-		</p>
-
-		<h2>Formal Abstractions</h2>
-
-		<p>
-			If $X$ is a set, then an abstraction of $X$ is a subset of $X$.
-		</p>
-
-		<p>
-			If $X$ is a sequence, then an abstraction of $X$ is a subsequence of $X$.
+			specified through abstraction alone.
+			Intuitively, this says that the human mind can be understood as a
+			memory mechanism of arbitrary complexity.
 		</p>
 
 		<p>
