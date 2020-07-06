@@ -56,10 +56,11 @@
 
 		<p>
 			In some contexts, however, the symbols are used to talk about two different things.
-			As such, a reader must be more attentive to distinguish them.
+			In such a context, the reader must be more attentive to distinguish them
+			(and the author must make their distinction suitably clear).
 			In such a context, the symbols <em>are distinct.</em>
 			Otherwise, they are not.
-			That is to say, <em>If we make a distinction, then they are distinct.
+			That is, <em>If we make a distinction, then they are distinct.
 			Otherwise, they are not.</em>
 		</p>
 
@@ -71,7 +72,7 @@
 		</p>
 
 		<p>
-			<strong>Definition</strong> An <em>object</em> is a distinct abstraction.
+			<strong>Definition:</strong> An <em>object</em> is a distinct abstraction.
 		</p>
 
 		<p>
@@ -94,7 +95,7 @@
 		<p>
 			Objects transcend language;
 			they belong to the mind alone.
-			As long as it can be described, it may be said to be an object.
+			As long as it can be made distinct, we will say that it is an object.
 		</p>
 
 		<p>
@@ -104,8 +105,11 @@
 			it is not "realized by" any physical entity.
 			Rather, it is a simplification away from the observation of multiple physical entities.
 			That is, the number two is a distinct abstraction, and is, to my mind,
-			otherwise as nonexistent as a unicorn.
+			otherwise nonexistent.
 		</p>
+
+		<p>
+
 
 		<h2> Names </h2>
 		<p>
@@ -115,23 +119,28 @@
 			to it.
 			The tangible portion of such a reference  will be called
 			an <em>expression.</em>
-			An expression is a unique, identifiable abstraction from something written.
-			It could be a symbol, a short word, or a lengthy description.
 		</p>
 
 		<p>
+			<strong>Definition:</strong> An <em>expression</em> is a distinct abstraction from something written.
+		</p>
+
+		<p>
+			It could be a single symbol, a short word, or a lengthy description.
 			Hence, $$x$$ is an expression, as is $$max,$$ as is $$\text{left of home plate.}$$
 		</p>
 
 		<p>
 			When an expression refers to an object,
-			it is called a <em>term</em>, and we will say that the term <em>denotes</em> the object.
-			The restriction is imposed that, if an expression denotes an object,
-			then it refers to exactly one object.
+			it is called a <em>term</em>,
+			and we will say that the term <em>denotes</em> the object.
 		</p>
 
 		<p>
-			Formally, a <em>term</em> is a distinct abstraction that refers to another distinct abstraction.
+			<strong>Definition:</strong> A <em>term</em> is a distinct abstraction that refers to another distinct abstraction.
+		</p>
+
+		<p>
 			The situation can be likened to pointers in C:
 		</p>
 
@@ -146,19 +155,32 @@
 		</em></p></center>
 
 		<p>
-			For example, the symbol $2$, as used above, denoted a quantity; it is therefore a
-			term.
-			Variables are defined separately.
+			For example, the symbol $2$ commonly denotes a quantity;
+			when used as such, it is a term.
+			With the words on objects above in mind, we can say that 2 is the same term as <em>2</em>,
+			for we make no distinction between the two expressions.
 		</p>
 
 		<p>
-			<strong>Definition:</strong> A <em>variable</em> is an expression that does not denote anything.
+			It is an error in logic to denote two distinct objects with the same
+			term simultaneously.
+			We impose this restriction, initially, because we wish to speak about objects
+			without ambiguity.
+			Later, we will be able to more formally express a reason for this restriction.
 		</p>
 
 		<p>
+			This section is an independent development; however, it is intended to
+			loosely coincide with Patrick Suppes's <em>Introduction to Logic.</em>
 			For further reading on names, see &#167;3.2, "Terms," and &#167;6.1, "Names and Things Named,"
 			of <em>Introduction to Logic.</em>
 		</p>
+
+		<h2> Identity </h2>
+
+		<p>
+			The logic that we will be concerned with developing is known as
+			<em>First Order Predicate Logic with Identity.</em>
 
 		<h2> Language </h2>
 
@@ -197,6 +219,12 @@
 			This is one of the reasons to develop formal languages:
 			Multiple-meanings is an avenue of ambiguity.
 		</p>
+
+
+					it prevents a kind of contradiction.
+					Namely, if $x$ denoted two distinct objects, then it would be true that,
+					$$ x\neq x. $$
+				</p>
 
 		<h2> Making Statements </h2>
 
@@ -427,7 +455,12 @@
                             2) Introduce a new layer of indirection
 						</p>
 
+						Variables are defined separately.
+					</p>
 
+					<p>
+						<strong>Definition:</strong> A <em>variable</em> is an expression that does not denote anything.
+					</p>
         <h2> Notes </h2>
         <ul>
             <li> Contradiction is false</li>
