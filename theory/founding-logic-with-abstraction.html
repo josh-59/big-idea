@@ -108,9 +108,6 @@
 			otherwise nonexistent.
 		</p>
 
-		<p>
-
-
 		<h2> Names </h2>
 		<p>
 			In a formal development, we want to consider each object
@@ -170,39 +167,9 @@
 
 		<p>
 			This work is an independent development.  However, it is intended to
-			loosely coincide with Patrick Suppes's <em>Introduction to Logic,</em>
-			but with less emphasis on sets.
+			loosely coincide with Patrick Suppes's <em>Introduction to Logic.</em>
 			For further reading on names, see &#167;3.2, "Terms," and &#167;6.1, "Names and Things Named,"
 			of <em>Introduction to Logic.</em>
-		</p>
-
-		<h2> Identity </h2>
-
-		<p>
-			The logic that we will be developing here is known as
-			<em>First Order Predicate Logic with Identity.</em>
-			The emphasis here is unambiguously on objects,
-			in part because it is the author's opinion that objects are what both
-			logic and math are fundamentally concerned with.
-			In addition, it allows an early and rigorous development of identity.
-		</p>
-
-		<p>
-			Identity is concerned with making explicit the situation in which two
-			terms <em>denote the same object.</em>
-			The symbol used to denote identity is the double-bar: $$=$$
-			This symbol should be read, <em>"...denotes the same object as...."</em>
-			It is often informally (and somewhat erroneously) read as <em>"...equals...;"</em>
-			in more formal developments it is read as, <em>"...is identical with...."</em>
-		</p>
-
-		<p>
-			My definition of the double-bar sign preserves its meaning from contemporary
-			developments, and, in virtue of the definition of objects given above, makes
-			explicit my interpretation of its meaning.
-			For a much fuller, and more authoritative, development of
-			the sign's contemporary meaning, I cannot recommend enough
-			&#167;5.1, "Logic of Identity," in Suppes's <em>Introduction to Logic.</em>
 		</p>
 
 		<h2> Language </h2>
@@ -211,39 +178,56 @@
 			In making a clear distinction between expressions, terms and objects,
 			we have begun to carve out the capability to generate languages for ourselves.
 			Specifically, we can now assign any meaning we like to any symbol we like&mdash;
-			that is, we can <em>define</em> symbols.
-			Neither objects nor symbols belong to language; rather,
-			interpretations of symbols (that is, definitions) belong to language.
+			that is, we can <em>define</em> expressions.
+			Neither objects nor expressions belong to language; rather,
+			interpretations of expressions (that is, definitions) belong to language.
 		</p>
 
 		<p>
-			A new language, formally developed, is called an <em>object language.</em><sup>[2]</sup>
-			The language used to describe an object language is called a <em>metalanguage.</em><sup>[2]</sup>
-			Set theory is an example of an object language;
-			English is an example of a metalanguage.
+			A new first-order language, as it is being developed, is called the
+			<em>object language.</em>
+			The language used to describe an object language is called
+			a <em>metalanguage.</em>
+			We always assume familiarity with metalanguages.
+		</p>
+
+		<p>
+			There's nothing wrong with developing one first-order language by using
+			another first-order language as a metalanguage.
+			In abstract algebra, the metalanguage involves set theory and the integers.
+			For instance, in $$x^3=e,$$ the integer <em>3</em> belongs to our
+			metalanguage.
 		</p>
 
 		<p>
 			A name that has a unique definition throughout the entirety of a language will
-			be called an <em>individual constant</em>&mdash; "individual," because it
-			denotes exactly one object; "constant," because it is invariant.
-			In mathematics, these assignments are usually made clear through explicit definitions.
-			The plain definition of <em>name</em> will be used in situations where
-			the assignment is temporary, e.g., in situations where one would say,
-			<em>Let x =...</em>
-		</p>
-
-		<p>
+			be called an <em>individual constant.</em>
 			Once an individual constant is defined, it may be assumed that the symbol denotes that object
 			throughout the entirety of the language it is defined within; in other words, the uniqueness
-			of an individual constant's definition is only guaranteed within its object language.
-			The stipulation that a name refer to a single object represents a significant simplification.
+			of an individual constant's definition is only guaranteed within its language.
+		</p>
+
+
 			English, being a natural language, does not follow this rule.
 			This is one of the reasons to develop formal languages:
 			Multiple-meanings is an avenue of ambiguity.
 		</p>
 
+		<p>
+				In order to make statements about objects, we will require appropriate
+				formal tools to let us do so.
+		</p>
 
+		<p>
+				<strong>Definition:</strong> A <em>predicate</em> is an
+				expression that makes a definitive statement about one or more objects.
+		</p>
+
+
+<p>
+			In keeping with our avoidance of ambiguity, we arbitrarily impose
+				the restriction that any FOL will define
+	Beyond symbols, object languages are also home to <em>predicates,</em>
 					it prevents a kind of contradiction.
 					Namely, if $x$ denoted two distinct objects, then it would be true that,
 					$$ x\neq x. $$
@@ -366,7 +350,33 @@
             One develops ideas in much the same way that one develops photographs.
         </p>
 
+				<h2> Identity </h2>
 
+				<p>
+					The logic that we will be developing here is known as
+					<em>First Order Predicate Logic with Identity.</em>
+					The emphasis here is unambiguously on objects,
+					in part because it is the author's opinion that objects are what both
+					logic and math are fundamentally concerned with.
+					In addition, it allows an early and rigorous development of identity.
+				</p>
+
+				<p>
+					Identity is concerned with making explicit the situation in which two
+					terms <em>denote the same object.</em>
+					The symbol used to denote identity is the double-bar: $$=$$
+					This symbol should be read, <em>"...denotes the same object as...."</em>
+					It is often informally (and somewhat erroneously) read as <em>"...equals...;"</em>
+					in more formal developments it is read as, <em>"...is identical with...."</em>
+				</p>
+
+				<p>
+					This definition of the double-bar sign preserves its meaning from contemporary
+					developments, and, in virtue of the definition of objects given above, makes
+					explicit my interpretation of its meaning.
+					See also:
+					&#167;5.1, "Logic of Identity," in Suppes's <em>Introduction to Logic.</em>
+				</p>
 
 
 		<h2> Sentential / Truth-Functional Connectives </h2>
