@@ -164,6 +164,9 @@
 			term simultaneously.
 			We impose this restriction because we wish to speak about objects
 			without ambiguity.
+			English, being a natural language, does not follow this rule.
+			This is one of the reasons to develop formal languages:
+			Multiple-meanings is an avenue of ambiguity.
 		</p>
 
 		<p>
@@ -212,25 +215,18 @@
 			What these subjects have in common is their logical rigor;
 			it is interesting to note the sheer amount of "assuming" that
 			goes on in such work.
-			Finally, I recapitulate: The notion of "object" is common to each.
+			I recapitulate: The notion of "object" is common to each.
 		</p>
 
-		<h2>Individual Constants</h2>
-
 		<p>
-			A name that has a unique definition throughout the entirety of a language will
-			be called an <em>individual constant.</em>
+			<strong>Definition:</strong> An <em>individual constanst</em> is a term that has a unique definition
+			throughout the entirety of a language.
 			Once an individual constant is defined, it may be assumed that the symbol denotes that object
 			throughout the entirety of the language it is defined within; in other words, the uniqueness
 			of an individual constant's definition is only guaranteed within its language.
 		</p>
 
-
-			English, being a natural language, does not follow this rule.
-			This is one of the reasons to develop formal languages:
-			Multiple-meanings is an avenue of ambiguity.
-		</p>
-
+		<h2> Making Statements </h2>
 		<p>
 				In order to make statements about objects, we will require appropriate
 				formal tools to let us do so.
@@ -238,25 +234,7 @@
 
 		<p>
 				<strong>Definition:</strong> A <em>predicate</em> is an
-				expression that makes a definitive statement about one or more objects.
-		</p>
-
-
-<p>
-			In keeping with our avoidance of ambiguity, we arbitrarily impose
-				the restriction that any FOL will define
-	Beyond symbols, object languages are also home to <em>predicates,</em>
-					it prevents a kind of contradiction.
-					Namely, if $x$ denoted two distinct objects, then it would be true that,
-					$$ x\neq x. $$
-				</p>
-
-		<h2> Making Statements </h2>
-
-		<p>
-			Beyond symbols, object languages are also home to <em>predicates,</em>
-			which allow us to make statements about objects.
-			A predicate is a symbol that denotes a relation between two objects.
+				expression that makes a definitive statement about an object.
 		</p>
 
 		<p>
@@ -292,7 +270,7 @@
 			In the definition of an ordered set, we find:
 		</p>
 
-		<p> <strong> Definition </strong> Let $S$ be a set.  An <em>order</em> on $S$ is a relation, denoted by &lt;,
+		<p> <em> Definition </em> Let $S$ be a set.  An <em>order</em> on $S$ is a relation, denoted by &lt;,
 			with the following two properties:
 
 			<ol>
@@ -394,6 +372,12 @@
 					explicit my interpretation of its meaning.
 					See also:
 					&#167;5.1, "Logic of Identity," in Suppes's <em>Introduction to Logic.</em>
+				</p>
+
+				<p>
+					Namely, if $x$ denoted two distinct objects, then it would be true that,
+					$$ x\neq x, $$ which is a logical absurdity, and one which we choose
+					to disallow in our writing.
 				</p>
 
 
