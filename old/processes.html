@@ -36,8 +36,6 @@ MathJax = {
 		<hr>
 		<p>
 			This paper introduces the process, a function without fixed points.
-			All processes make change;
-			a process is <i>a set of changes</i>.
 		</p>
 
 		<h2> Definition </h2>
@@ -56,22 +54,15 @@ MathJax = {
 			$$S:ℕ→ℕ \text{ by } S(n) = n+1$$
 		</p>
 
-		<h2> Example 2: Nondivergent Process </h2>
+		<h2> Example 2: On a Finite Set </h2>
 		<p>
-			A process need not be divergent. Let $p$ be a function on $\set{0, 1, 2}$ by
+			A process need not be divergent. Let $p$ be a function on $\set{0, 1}$ by
 			$$
 			p(x) = \begin{cases} 	\ 1 \text{ if } x = 0, \\
-						 			\ 2 \text{ if } x = 1, \\
-						 			\ 0 \text{ if } x = 2.
+						 			\ 0 \text{ if } x = 1. \\
 				   \end{cases}
 			$$
-			Then $p$ is a process with a range consisting of exactly
-			three elements.
-		</p>
-
-		<p>
-			More generally, any process acting on a finite set is
-			nondivergent.
+			Then $p$ is a process.
 		</p>
 
 		<h2> Realized Process </h2>
@@ -79,12 +70,12 @@ MathJax = {
 			In virtue of its mathematical definition, a process is a set.
 			Of that set, we will typically be concerned with a single element
 			of it.
-			This we will call a <i>realized</i> process.
+			These we will call <i>realized processes.</i>
 		</p>
 
 		<p>
 			Each realized process has two discernible elements,
-            		Argument and Result:
+            Argument and Result:
 		</p>
 
 		<img src="../theory/img/process_1.png" title="Realized Process"></img>
@@ -92,9 +83,13 @@ MathJax = {
 
 		<p>
 			If $p$ is a process, and $a$ is an element in its domain,
-			then $(a,p(a))$ is a realized process, with argument $a$
+			then $(a,p(a))$ is a realized process with argument $a$
 			and result $p(a)$.
 		</p>
+
+        <p>
+            A realized process is a change.
+        </p>
 
 		<p>
 			We seek to isolate change, and the tool that we will use to do

@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>The Process</title>
+<link href="../style.css" rel="stylesheet" type="text/css">
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']]
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+</head>
+
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li> <a href="../"> Home </a></li>
+				<li> <a href="./"> Theory </a></li>
+				<li> <a href="../about.html"> About </a></li>
+			</ul>
+		</nav>
+
+	</header>
+
+	<br>
+
+	<main>
+
+		<h1> The Process </h1>
+		<hr>
+		<p>
+            This paper introduces the process, a function without fixed points.
+			Processes are the (future) mathematical backbone of the theory.
+		</p>
+
+		<h2> Definition </h2>
+		<p>
+			Suppose $X$ is a nonempty set.
+			Then a function $p:X→X$ is a process if for all $x &#8712; X, p(x) &#8800; x$.
+		</p>
+
+		<p>
+			We might also say that $p$ is a process on $X$.
+		</p>
+
+		<h2> Example 1: Successor Function </h2>
+		<p>
+			Probably the simplest mathematical process we can consider is the successor function:
+			$$S:ℕ→ℕ \text{ by } S(n) = n+1$$
+		</p>
+
+		<h2> Example 2: On a Finite Set </h2>
+		<p>
+			A process need not be divergent. Let $p$ be a function on $\set{0, 1}$ by
+			$$
+			p(x) = \begin{cases} 	\ 1 \text{ if } x = 0, \\
+						 			\ 0 \text{ if } x = 1. \\
+				   \end{cases}
+			$$
+			Then $p$ is a process.
+		</p>
+
+		<h2> Realized Process </h2>
+		<p>
+			In virtue of its mathematical definition, a process is a set.
+			Of that set, we will typically be concerned with a single element
+			of it.
+			These we will call <i>realized processes.</i>
+		</p>
+
+		<p>
+			Each realized process has two discernible elements,
+            Argument and Result:
+		</p>
+
+		<img src="../theory/img/process_1.png" title="Realized Process"></img>
+		<h5 style="text-align: center; margin-top: -30px;"> The Realized Process </h5>
+
+		<p>
+			If $p$ is a process, and $a$ is an element in its domain,
+			then $(a,p(a))$ is a realized process with argument $a$
+			and result $p(a)$.
+		</p>
+
+        <p>
+            A realized process is a change.
+        </p>
+
+		<p>
+			<center> <a href="#">Top </a> </center>
+		</p>
+
+		<footer>
+			 Questions, comments, criticisms? <a href="mailto:josh.m.timmons@gmail.com" > Leave me feedback!</a>
+		</footer>
+	</main>
+
+</body>
+</html>
