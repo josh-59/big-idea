@@ -67,30 +67,49 @@ MathJax = {
 			Then $p$ is a process.
 		</p>
 
-		<h2> Realized Process </h2>
+		<h2> Realizations of Processes </h2>
 		<p>
 			In virtue of its mathematical definition, a process is a set.
-			Of that set, we will typically be concerned with a single element
+            Of that set, we will typically be concerned with a single element
 			of it.
-			These we will call <i>realized processes.</i>
 		</p>
 
 		<p>
-			Each realized process has two discernible elements,
-            Argument and Result:
-		</p>
-
-		<img src="../theory/img/process_1.png" title="Realized Process"></img>
-		<h5 style="text-align: center; margin-top: -30px;"> The Realized Process </h5>
-
-		<p>
-			If $p$ is a process, and $a$ is an element in its domain,
-			then $(a,p(a))$ is a realized process with argument $a$
-			and result $p(a)$.
+            <strong>Definition:</strong>
+			A <em>realization</em> of a process $p$ is an element of $p$.
 		</p>
 
         <p>
-            A realized process is a change.
+            Since processes are functions, a realization is an ordered pair whose elements are
+            distinct.
+            If $p$ is a process, and $a$ is an element in its domain,
+            then $(a,p(a))$ is a realization of p with argument $a$
+            and result $p(a)$:
+        </p>
+
+		<img src="../theory/img/process_1.png" title="Realized Process"></img>
+		<h5 style="text-align: center; margin-top: -30px;"> A Realization of a Process </h5>
+
+        <p>
+            Intuitively, a realization is a change.
+        </p>
+
+        <h2> Example 3: Successor Function </h2>
+        <p>
+            As above, let $S:ℕ→ℕ$ by,
+            $$ S(n) = n+1.$$
+            Then $(2,3)$ is a realization of $S$.
+        </p>
+
+        <h2> Example 4: On a Finite Set </h2>
+        <p>
+            As above, let $p$ be a function on $\set{0, 1}$ by,
+            $$
+            p(x) = \begin{cases} 	\ 1 \text{ if } x = 0, \\
+                                    \ 0 \text{ if } x = 1. \\
+                   \end{cases}
+            $$
+            Then $(0,1)$ and $(1,0)$ are the realizations of $p$.
         </p>
 
 		<h2> Consciousness </h2>
