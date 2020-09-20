@@ -33,67 +33,21 @@
 		<h1>Abstractions</h1>
 
 		<hr>
+
+		<div class="quote_text"> "Our everyday use of language is vague, and our
+			everyday level of thinking is often muddled." </div>
+
+		<div class="quote_ref">
+			Dr. Patrick Suppes <br>
+			Introduction to Logic, page xi
+		</div>
+
+
 		<p>
-			An abstraction discards information in order to produce something simpler;
+			An abstraction discards information;
 			intuitively, an abstraction is a simplification.
 			Every abstraction acts like a mathematical function, with
 			distinct input and output.
-		</p>
-
-		<h2> Examples of Abstraction In Computer Science </h2>
-		<p>
-			In computer science, abstraction is extremely important, and is necessarily defined in concrete terms
-			(in virtue of the bit).
-			For instance, the bit itself is an abstraction: It is defined to have
-			only one of two possible states, and these states may be implemented in
-			a variety of ways.
-			We discard the actual state of the physical device, and
-			focus on its conceptual state.
-		</p>
-
-		<p>
-			Within programming, a common practice is to write subroutines that
-			carry out some small task.
-			This allows the programmer to break up a complex task into a sequence of simpler ones.
-			Intrinsic to this process is the abstraction away from these subroutines:
-			They are each individually written, tested, and ensured to work.
-			Then, they are abstracted away from by disregarding the
-			particulars of their implementation.
-		</p>
-
-		<p>
-			Finally, I wish to say that computer science provided the genesis of this entire development&mdash; specifically,
-			<a href="https://www.joelonsoftware.com/2002/11/11/the-law-of-leaky-abstractions/"> Joel Spolsky's <i>The Law of Leaky Abstractions</i></a>.
-			To express my appreciation, and for a clear example of an abstraction, I ask that you read his essay.
-		</p>
-
-		<h2> Mathematics and Abstraction </h2>
-		<p>
-			Mathematical objects are entirely abstract.
-			That is, mathematics considers the case when simplification
-			from reality has already taken place.
-			Objects within mathematics are well-defined abstractions.
-		</p>
-
-		<h2> Examples Within Logic </h2>
-		<p>
-			For a mathematics student such as myself, propositional logic
-			is an intellectual tool.
-			Much like a table or a diagram, it serves to aid my thinking.
-			The usefulness of propositional logic is that it begins abstracting from the statement:
-			I can view any mathematical statement <em>as a proposition</em>,
-			and that proposition becomes an abstraction of my statement.
-			This recasts my statement into the field of propositional logic,
-			where substantial and relevant theory exists.
-		</p>
-
-		<p>
-			An example of reasoning by abstraction:
-			In propositional logic, the transitive law of implication
-			states that, given the premises, "A implies B", and
-			"B implies C", we may conclude "A implies C."
-			This reasoning is an act of abstraction:
-			We are discarding statement <i>B</i> in its entirity.
 		</p>
 
 		<h2>Definition of Abstraction</h2>
@@ -142,6 +96,74 @@
 			<strong>Definition:</strong>
 			An <em>abstraction</em> is a discarding process.
 		</p>
+
+		<p>
+			Because abstractions exist in multiple contexts, we must differentiate
+			them in a meaningful way.
+			We will divide abstractions into two classes, <em>pure</em> and
+			<em>impure.</em>
+			Pure abstractions are simplifications of singular entities.
+			They are the purview of formal sciences, and one
+			does not conduct science without dealing in pure abstractions.
+		</p>
+
+		<p>
+			Impure abstractions are simplifications of more than one entity.
+			While these are not very interesting formally speaking, for they
+			are not predictable, they are the intuitive method of the mind.
+		</p>
+
+		<h2> Pure Abstractions </h2>
+
+		<p>
+			<strong>Definition:</strong>
+			A <em>pure abstraction</em> is an abstraction of a single entity.
+		</p>
+
+		<p>
+			In physics, kinematics is introduced by first modeling an object as
+			a point.
+			This point representation of the object is a pure abstraction of the object.
+		</p>
+
+		<p>
+			In computer science, the bit is a pure abstraction of underlying
+			hardware.
+			It is defined to have only one of two possible states, and these
+			states may be implemented in a variety of ways.
+		</p>
+
+		<p>
+			Mathematical objects are pure abstractions;
+			mathematics considers the case when simplification
+			from reality has already taken place.
+		</p>
+
+		<p>
+			In each of the above examples, the abstraction yields a many-to-one
+			relationship: Many objects can be modeled as points.
+			Many pieces of hardware can be thought of as bits.
+			This holds in the general case: Abstraction never adds information.
+			Equivalently, every abstraction is more general
+			than the thing it discards from.
+		</p>
+
+		<p>
+			Pure abstractions are variously known as <em>objects,</em> as in logic;
+			and, <em>models,</em> within physics.
+			I have previously developed them as <em><a href="founding-logic-with-abstraction.html">distinct abstractions</a>.</em>
+		</p>
+
+		<p>
+			However, the purpose of the pure/impure distinction is to give us the
+			language required to describe the mind well:
+			I am not here concerned with furthering pure abstractions;
+			that is the domain of logic.
+			Rather, I seek to use the concept well (that is, in a metalanguage sense) to highlight something which is impure.
+		</p>
+
+		<h2> Impure Abstractions </h2>
+
 
 		<div id="depicting">
 
