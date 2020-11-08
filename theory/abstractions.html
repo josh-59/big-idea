@@ -97,57 +97,12 @@
 			An <em>abstraction</em> is a discarding process.
 		</p>
 
-		<p>
-			Because abstractions exist in multiple contexts, we must differentiate
-			them in a meaningful way.
-			We will divide abstractions into two classes, <em>pure</em> and
-			<em>impure.</em>
-		</p>
-
-		<h2> Pure Abstractions </h2>
-
-		<p>
-			<strong>Definition:</strong>
-			A <em>pure abstraction</em> is an abstraction of a single entity.
-		</p>
-
-		<p>
-			In physics, kinematics is introduced by first modeling an object as
-			a point.
-			This point representation of the object is a pure abstraction of the object.
-		</p>
-
-		<p>
-			In computer science, the bit is a pure abstraction of underlying
-			hardware.
-			It is defined to have only one of two possible states, and these
-			states may be implemented in a variety of ways.
-		</p>
-
-		<p>
-			In each of the above examples, the abstraction yields a many-to-one
-			relationship: Many objects can be modeled as points, and
-			many pieces of hardware can be thought of as bits.
-			This holds in the general case: Abstraction never adds information.
-			That is, every abstraction is more general
-			than the thing it discards from.
-		</p>
-
-		<h2> Impure Abstractions </h2>
-
-		<p>
-			Although certainly important, pure abstractions are too clean and
-			neat to describe the operation of the mind in the general case.
-		</p>
-
-
-
-
 		<div id="depicting">
 
 			<h2> Depicting Abstraction </h2>
 
 			<p>
+			    
 				Several relevant components of abstractions may be
 				conveyed by viewing it as a 'hump' or 'string':
 			</p>
@@ -158,7 +113,9 @@
 			</figure>
 
 			<p>
-				The salient features of this graph:
+				On the horizontal axis is time, with "forward" existing to 
+                the right.
+                On the vertical axis is data, with "more" existing to the top:
 			</p>
 
 			<figure>
@@ -166,32 +123,35 @@
 				<center><figcaption>Axes of Abstraction</figcation></center>
 			</figure>
 
-			<p>
-				In order to abstract, we require some data or material
-				to abstract from.
-				As a consequence, our depiction is composed of two parts:
-				Observing and Discarding:
+            <p>
+                While we require some data to abstract from, the accumulation
+                of data is not our primary interest.
+                Rather, only the discarding of data concerns us.
+                Nonetheless, our depiction may be intuitively understood
+                as being composed of two parts, observation and discarding:
 			</p>
 
 			<figure>
 				<img src="img/parts-of-abstraction.png">
-				<center><figcaption>Parts of Abstraction</figcation></center>
+				<center><figcaption>Intuitive Parts of Abstraction</figcation></center>
 			</figure>
 
 			<p>
-				Properly speaking, <em>abstraction</em> is the process of
-				discarding from observation.
-				Because we will view the abstraction as a function, we will use the
-				word <em>argument</em> as a synonym for <em>observation.</em>
-				On the horizontal axis is time, with "forward" existing to the right.
-				On the vertical axis is data, with "more" existing to the top:
-			</p>
+			    We choose to view the abstraction as a function, for it
+                <em>is not</em> the data which is our primary interest;
+                rather, our primary interest is the process of discarding it.
+                Concurrently, we will use the word "argument" as a synonym for 
+                "observation," and "result" as a synonym for "discarding."
+                The instance of the function which yielded the change is 
+                our abstraction proper.
+            </p>
 
+            <p>
+                Often, a given abstraction will be composed of several smaller
+                abstractions.
+                In view of our depiction, then, it will be useful to orient
+                ourselves with respect to this situation.  
 
-			<p>
-				Thus, in these depictions, abstractions exist only on the right.
-				Moreover, they decrease in specificity (and increase in generality):
-			</p>
 
 			<figure>
 				<img src="img/sequence-of-abstractions.png">
