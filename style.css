@@ -198,3 +198,19 @@ hr:before {
 ::selection {
 	background: #d9d7ef;
 }
+
+.notes {
+    font-size: 14pt;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.notes p {
+    margin-bottom: 0;
+}
+
+.notes ol {
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
