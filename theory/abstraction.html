@@ -46,228 +46,29 @@
 			In my opinion, abstractions are fundamental to the mind:
 			Through abstraction, the <em>objects</em> of the mind and the
             <em>activity</em> of thinking may be related in a fundamental way.
-            Let's look at these each, in turn.
 		</p>
 
 		<p>
-			The first way to view an abstraction as an idea, its noun form. 
-			In this form, an abstraction is an idea with the property that it is 
-			a simplification of some other idea.
-			This formalizes nicely:  If $X$ is some collection of information,
-			and $Y$ is a proper subset of $X$, then $Y$ is an abstraction of $X$.
-		</p>
-
-		<p>
-		    The second way to view an abstraction is as an act, and to 
-            formalize the verb form of the word.
-            This also formalizes nicely:
-			An abstraction is a mapping from some information to less information.
-		</p>
-
-		<p>
-            Which definition is more appropriate is situation-dependant:
-            When one is carrying out abstraction, the second defintion is
-            more appropriate;
-            when one is observing the result of the act, the first definition
-            is more appropriate.
-        </p>
-
-        <p>
-            However, if we define abstraction to be a mapping from some
-            information to less information, we get the second definition
-            for free: since the 'mapping' will be an ordered pair.  
-        </p>
-           
-        <p>
-            PICTURE HERE
-        </p>
-
-        <p>
-            Owing to the nature of our pursuit, we require both definitions,
-            and so we will associate the word <em>simplification</em>
-            with one of them:
-        </p>
-
-        <p>
             <strong>Definition:</strong>
             An <em>abstraction</em> is a mapping from some 
             information to less information.
 		</p>
-		
-		<p>
-            <strong>Definition:</strong>
-            A <em>simplification</em> is a collection of information with
-			the property that it is the result of some abstraction.
-			That is, if $y$ is a simplification, then there exists some
-			collection of information $y$ and some abstraction $a$ such that 
-			$y = a(x)$
-        </p>
-
-        <div class="notes">
-            <p>
-                Notes: 
-                <ol>
-                    <li>While <em>simplification</em> may be intuitively synonymous
-                    with "abstraction", they will not be considered formally synonymous.</li>
-                    <li>We associate "abstraction" with mapping, since we will be 
-                    principally interested in abstraction as a process.</li>
-                </ol>
-            </p>
-        </div>
-
-		<h3> Observation and Abstraction </h3>
 
 		<p>
-			Observing and abstracting is a strategy for using the mind's memory;
-			this strategy will emerge a few times in different contexts, but for now,
-			it will be sufficient to explain only the lowest-level use that it is put to&mdash;
-			namely, querying memory.
+			Since an abstraction is an ordered pair, it is a collection of information.
+			Moreover, it contains two distinct collections of information.
 		</p>
 
 		<p>
-			Here we have a data vs. time plot expressing the idea: 
-		</p>
-
-		<img src="./img/observation-abstraction.png">
-
-		<p>
-			To query memory intelligently, the mind could first observe,
-			and then cease observing. 
-			That part of the observation which does not change,
-			or changes the least, is more well-known:  It is <em>remembered</em>.
-			That part of the observation which <em>does</em> change is less well-known:  It
-			is new.  
+			Mathematically, we can either <em>observe</em> an abstraction, and obtain an ordered pair;
+			or, we can <em>apply</em> an abstraction.  In either case, we obtain a collection of information.
 		</p>
 
 		<p>
-			The converse of this activity is "zoning out." 
+			Computationally, each abstraction may be represented as a filter.  Intuitively, the purpose
+			of entertaining abstractions is to filter information.
 		</p>
 
-		<h2>Working Memory</h2>
-
-		<p>
-			If we assume that the mind has "working memory," and that its
-			quantity is near (though not absolutely) constant, 
-			then we arrive at the conclusion that these observation/abstraction
-			pairs overlap:
-		</p>
-
-		<img src="./img/sequence-of-abstractions-on-data-vs-time.png">
-
-        <p>
-            Because it is our goal to describe the mind, we must describe the
-            "muddled" thinking mentioned above.
-        </p>
-
-        <p>
-            <strong>Definition:</strong>
-            A <em>pure abstraction</em> is an abstraction of exactly one thing.
-            An <em>impure abstraction</em> is an abstraction of at least two things.
-        </p>
-
-
-        <!--
-
-        <p>
-            There is a direct correlation between truth and accuracy:
-        </p>
-
-		<div id="depicting">
-
-			<h2> Depicting Abstraction </h2>
-
-			<p>
-				Several relevant components of abstractions may be
-				conveyed by viewing it as a 'hump' or 'string':
-			</p>
-
-			<figure>
-				<img src="img/abstraction.png">
-				<center><figcaption>An Abstraction</figcaption></center>
-			</figure>
-
-			<p>
-				On the horizontal axis is time, with "forward" existing to 
-                the right.
-                On the vertical axis is data, with "more" existing to the top:
-			</p>
-
-			<figure>
-				<img src="img/axes-of-abstraction.png">
-				<center><figcaption>Axes of Abstraction</figcation></center>
-			</figure>
-
-            <p>
-                While we require some data to abstract from, the accumulation
-                of data is not our primary interest.
-                Rather, only the discarding of data concerns us.
-                Nonetheless, our depiction may be intuitively understood
-                as being composed of two parts, observation and discarding:
-			</p>
-
-			<figure>
-				<img src="img/parts-of-abstraction.png">
-				<center><figcaption>Intuitive Parts of Abstraction</figcation></center>
-			</figure>
-
-			<p>
-			    We choose to view the abstraction as a function, for it
-                <em>is not</em> the data which is our primary interest;
-                rather, our primary interest is the process of discarding it.
-                Concurrently, we will use the word "argument" as a synonym for 
-                "observation," and "result" as a synonym for "discarding."
-                The instance of the function which yielded the change is 
-                our abstraction proper.
-            </p>
-
-            <p>
-                Often, a given abstraction will be composed of several smaller
-                abstractions.
-                In view of our depiction, then, it will be useful to orient
-                ourselves with respect to this situation.  
-
-
-			<figure>
-				<img src="img/sequence-of-abstractions.png">
-				<center><figcaption>Sequence of Abstractions</figcation></center>
-			</figure>
-
-			<p>
-				Where abstraction $1$ is more specific than $2$, and $2$ is more specific than $3$,
-				and so on.
-			</p>
-
-	</div> 
-
-	<div id="order-of-abstraction">
-		<h2> Order of an Abstraction </h2>
-		<p>
-			An abstraction need not exist in isolation.
-		</p>
-
-		<p>
-			<strong>Definition:</strong> The <em>order</em> of an abstraction $a$ is
-			the number of abstractions extant in the observation by $a$:
-		</p>
-
-		<center><img src="img/orders-broken-apart.png" style="width: 100%;"></img></center>
-	</div> 
-
-	<h2> Depth</h2>
-	<p>
-		An abstraction need not be as simple as a single observation.
-		Rather, a single abstraction may be constructed as a sequence of multiple, observations:
-	</p>
-
-	<figure>
-		<center><img src="img/deep-abstraction.png" style="width:100%;"></center>
-	</figure>
-
-	<p>
-		This we will refer to as the <em>depth</em> of the intellect.
-	</p>
-
-    -->
 
 
 		<p>
