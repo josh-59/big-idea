@@ -34,6 +34,13 @@
 
 		<hr>
 
+		<div class="quote_text"> "All non-trivial abstractions, to some degree, are leaky." </div>
+
+		<div class="quote_ref">
+			Joel Spolsky <br>
+			<a href="https://www.joelonsoftware.com/2002/11/11/the-law-of-leaky-abstractions/">The Law of Leaky Abstractions</a>
+		</div>
+
 		<p>
 			In my opinion, abstractions are fundamental to the mind:
 			Through abstraction, the <em>objects</em> of the mind and the
@@ -47,9 +54,10 @@
 		</p>
 
 		<p>
-			An abstraction is an ordered pair, and it is a collection of 
-            information.
-			Moreover, it contains two distinct collections of information.
+		    An abstraction is a collection of information with structure.
+            Specifically, if $(a,b)$ is an abstraction,
+            then $b$ is a proper subset of $a$: 
+            All information in $b$ is included in $a$.
 		</p>
 
 	    <p>
@@ -83,6 +91,12 @@
             Alternatively, we may define an abstraction $i$ which maps
             an abstraction to an idea:
             $$i = ((a,b), b)$$
+        </p>
+
+        <p>
+            <strong>Definition:</strong>
+            An <em>oversimplification</em> is an abstraction which discards
+            the most relevant, pertinent or important information.
         </p>
             
 		<p>

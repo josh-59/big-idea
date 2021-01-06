@@ -1,17 +1,62 @@
 Filters:
 
-    A <em>filter,/em> is an abstraction of the form
-    (<delta>, <null>).
-
     For any abstraction (a,b), 
     <delta> = a - b, and 
     ((a,b),<delta>) is an abstraction.
+
+    This implies that filters are obtainable within this theory.
+    However, use of filters blindly would not be intelligent, and therefore,
+    would not be useful (nor expected) within this theory..
+
+    Simultaneously, however, the ability to say, 
+    "No" is the genesis of individuality;
+    in a nontrivial sense, the overaching purpose of the activities of
+    the mind is to say "no" intelligently.
+    Thereby, the human mind can be viewed as an intelligent filter
+    (though the usefulness of this is dubious).
+
+
+
+
+Emotions:
+    Rather than assuming them to be an "undefined primitive," 
+    in this development I expect them to be thoughts about oneself.
+
+    For instance, we can associate fear with the thought of losing oneself.
+    Hate -> Desire/Proclivity to change
+    Love -> Could never hate
+
+Memory:
+    A notable quality of memory is that one does not remember remembering.
+    Doing so would generate new memories, rather than reinforcing old ones.
+    As such, I expect this to be modeled (here) as a high-level-though-still-
+    rudimentary pattern of thought.
+
+Orders:
+    Structure of abstraction.
+
+    Higher order -> Greater simplification
+        (but threatens to oversimplify) 
+
+    Oversimplification:
+        An abstraction which discards the most important information.
+
+        It is possible to oversimplify by discarding the structure of the
+        abstraction. 
+        This is the genesis of psychology, for instance. 
+
+Object:
+    It might be possible (then again, it might also be superfluous)
+    to describe mathematical "objects" within this theory:
+
+    An idea A such that A=A
+
+    Intuitvely, this is intended to ensure that the idea does not change.
+
+Organization:
+    The tendency of an intellect to become a container of information.
+    "Coherency"
+
+This-is-a-that:
+    The first stage of organization: Definition-building
     
-    The <em>meaning</em> of abstractions and of intellect is to filter information,
-    and ultimately, say "no."
-
-    "No", in turn, is the genesis of individuality.
-
-
-
-
