@@ -66,5 +66,16 @@ Intelligence:
         -> Define Conflict
         -> Define Efficacy
 
+Belief:
+    """
+    Definition:
+    A belief is an abstraction present in the argument of an abstraction.
+    """
 
-    
+Model:
+    """
+    A model is to thought what a mneumonic is to memory.
+
+    Definition:
+    A model is an abstraction which supports metathought
+    """
