@@ -1,6 +1,4 @@
-
 Filters:
-
     For any abstraction (a,b), 
     <delta> = a - b, and 
     ((a,b),<delta>) is an abstraction.
@@ -25,7 +23,8 @@ Emotions:
     Rather than assuming them to be an "undefined primitive," 
     in this development I expect them to be thoughts about oneself.
 
-    For instance, we can associate fear with the thought of losing oneself.
+    For instance:
+    Fear -> thought of losing oneself.
     Hate -> Desire/Proclivity to change
     Love -> Could never hate
 
@@ -45,15 +44,7 @@ Orders:
         abstraction. 
         This is the genesis of psychology, for instance. 
 
-Object:
-    It might be possible (then again, it might also be superfluous)
-    to describe mathematical "objects" within this theory:
-
-    An idea A such that A=A
-
-    Intuitvely, this is intended to ensure that the idea does not change.
-
-Organization:
+    Organization:
     The tendency of an intellect to become a container of information.
     "Coherency"
 
@@ -79,3 +70,19 @@ Model:
     Definition:
     A model is an abstraction which supports metathought
     """
+
+Precise Thinking:
+    A better definition is required before this can be 
+    included with the other material.
+
+    Precise thinking can be associated with abstraction to 
+    a well-defined thing.
+    We can take this to its limit by introducing objects:
+
+    An <em>object</em> is an idea $A$ such that $A=A$.
+
+    Although any thought yields, in theory, an object, it is
+    not necessarily the case that the mind treats it as an object:
+    It may abstract from the object and treat it identically to some
+    non-identical idea; this is the genesis of vague thinking.
+
